@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <section id='mainMenu'>
+    <h1>Deep Space</h1>
+    <p>Deep space is a cooperative board game for up to 7 players. It has a board with different types of tokens and multiple decks of cards. All of that can be represented easily in a webpage. I will try to make a single player version first. Then I will look into online multiplayer.</p>
+    <p>This project is under construction.</p>
+    <h2>Goals:</h2>
+    <ul>
+      <li><s>Click on new game or Load game to start.</s></li>
+      <li>Load game: has an input that lets you upload a txt file save.</li>
+      <li><s>New game: starts with character, item, and difficulty selection.</s></li>
+      <li><s>Only 1 of each item and character allowed.</s></li>
+      <li><s>Main board appears after the player clicks start (with valid choices.)</s></li>
+      <li><s>Message to the player if they click start with invalid choices.</s></li>
+      <li><s>Battle track with Kludde fleet and Ship energy.</s></li>
+      <li><s>Ship Board with 6 space zones around it.</s></li>
+      <li><s>Start with 1 Kludde in each space zone.</s></li>
+      <li><s>Character images move on the ship</s></li>
+      <li><s>kludde images appear in space zones</s></li>
+      <li><s>Kludde deck and item deck get shuffled.</s></li>
+      <li><s>Select actions from dropdown menu</s></li> 
+      <li><s>checkboxes or dropdown menu appears to make selections.</s></li>
+      <li>~<s>checkboxes for damage.</s></li>
+      <li>~<s>radio for rooms and space zones</s></li>
+      <li>~<s>dropdown for ship system and characters</s></li>
+      <li>~<s>click on kludde for info and to select as option.</s></li>
+      <li>~item actions</li>
+      <li>~trade items??</li>
+      <li>Penalties from infections</li>
+      <li><s>Infection cards and events trigger when kludde revealed.</s></li>
+      <li><s>Reduce kludde fleet when klude cards defeated</s></li>
+      <li><s>Kludde attack phase after each character turn.</s></li>
+      <li>~<s>1 kludde is added to attacked room.</s></li>
+      <li>~<s>1 Stagger for character in attacked room.</s></li>
+      <li>~<s>1 damage for each kludde attacking the room.</s></li>
+      <li>~<s>Reduce ship energy by 1 for every damage that doesn't go on the ship.</s></li>
+      <li>~<s>Allow player to block with shields.</s></li>
+      <li>Game ends when ship energy or Kludde fleet reaches zero.</li>
+      <li>Save game to generate a txt file, which can later be used to load.</li>
+    </ul>
+    <hr>
+    <h2 onclick='resetTheGame();'>| New Game |</h2>
+    <h2 onclick='showLoad();'>| Load Game |</h2>
+    <h2 onclick='showInstructions();'>| Instructions |</h2>
+  </section>
+
+  <section id='loadScreen' display='none'> </section>
+
+  <section id='selectionScreen'>
+    <input type="submit" value="Start Game" onclick="checkItems();">
+    <br><br>
+    <label for="difficulty" onchange='sendMessage("Difficulty: How large is the Kludde fleet?");'>Difficulty</label>
+    <input type="range" value="20" min="20" max="50" name="difficulty" id="difficulty">
+    <br><br>
+    <label for="crew" onchange='sendMessage("Crew size: How many Katundians are on board your ship?");'>Crew size</label>
+    <input type="range" value="4" min="1" max="7" name="crew" id="crew" onchange='crewSize(value);'>
+    <br><br>
+    <div id='character0Start'>
+      <label for="character0">Character:</label>
+      <select name="character0" id="character0" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item0">~ Item:</label>
+      <select name="item0" id="item0" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room0">~ Room:</label>
+      <select name="room0" id="room0" onchange='roomDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character1Start'>
+      <label for="character1">Character:</label>
+      <select name="character1" id="character1" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item1">~ Item:</label>
+      <select name="item1" id="item1" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room1">~ Room:</label>
+      <select name="room1" id="room1">
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character2Start'>
+      <label for="character2">Character:</label>
+      <select name="character2" id="character2" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item2">~ Item:</label>
+      <select name="item2" id="item2" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room2">~ Room:</label>
+      <select name="room2" id="room2" onchange='roomDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character3Start'>
+      <label for="character3">Character:</label>
+      <select name="character3" id="character3" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item3">~ Item:</label>
+      <select name="item3" id="item3" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room3">~ Room:</label>
+      <select name="room3" id="room3">
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character4Start'>
+      <label for="character4">Character:</label>
+      <select name="character4" id="character4" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item4">~ Item:</label>
+      <select name="item4" id="item4" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room4">~ Room:</label>
+      <select name="room4" id="room4" onchange='roomDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character5Start'>
+      <label for="character5">Character:</label>
+      <select name="character5" id="character5" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item5">~ Item:</label>
+      <select name="item5" id="item5" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room5">~ Room:</label>
+      <select name="room5" id="room5">
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br><br>
+    <div id='character6Start'>
+      <label for="character6">Character:</label>
+      <select name="character6" id="character6" onchange='characterDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Android</option>
+        <option value=1>Captain</option>
+        <option value=2>Cook</option>
+        <option value=3>Mechanic</option>
+        <option value=4>Medic</option>
+        <option value=5>Scout</option>
+        <option value=6>Teleporter</option>
+      </select>
+      <label for="item6">~ Item:</label>
+      <select name="item6" id="item6" onchange='itemDescription(value);'>
+        <option value=24>random</option>
+        <option value=0>Alkashitzer</option>
+        <option value=1>Atomic Deconstructor</option>
+        <option value=2>Atomic Reconstructor</option>
+        <option value=3>B.F.G.G.</option>
+        <option value=4>Battle Biscuits</option>
+        <option value=5>Dank Nugget</option>
+        <option value=6>Dimensional Scanner</option>
+        <option value=7>Eye Drones</option>
+        <option value=8>Fix It Grenade</option>
+        <option value=9>Handi Boots</option>
+        <option value=10>Hypersonic Wrench</option>
+        <option value=11>Impolsion Launcher</option>
+        <option value=12>Inferno Blaster</option>
+        <option value=13>KEM Spray</option>
+        <option value=14>Lumination Stick</option>
+        <option value=15>Nanite Cluster</option>
+        <option value=16>NIP</option>
+        <option value=17>Photon Emitter</option>
+        <option value=18>Pounce Suit</option>
+        <option value=19>Power Suit</option>
+        <option value=20>Quantifoam Canister</option>
+        <option value=21>Reboot Gloves</option>
+        <option value=22>Temporal Loop</option>
+        <option value=23>Viral Elimination Tool</option>
+      </select>
+      <label for="room6">~ Room:</label>
+      <select name="room6" id="room6" onchange='roomDescription(value);'>
+        <option value=7>random</option>
+        <option value=0>Bridge</option>
+        <option value=3>Engine Room</option>
+        <option value=5>Galley</option>
+        <option value=4>Hold</option>
+        <option value=6>Hub</option>
+        <option value=1>Infirmary</option>
+        <option value=2>Loading Bay</option>
+      </select>
+    </div>
+    <br>
+  </section>
+
+  <!--This section has the game itself. The ship, the kludde, the action selector, -->
+  <section id='theGame'>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage0' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage1' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage2' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage3' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage4' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage5' width='60' height='60'/>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' id='characterImage6' width='60' height='60'/>
+    <section id='kluddeOverlay'>
+      <p id='kluddeAmount0'>0</p>
+      <p id='kluddeAmount1'>0</p>
+      <p id='kluddeAmount2'>0</p>
+      <p id='kluddeAmount3'>0</p>
+      <p id='kluddeAmount4'>0</p>
+      <p id='kluddeAmount5'>0</p>
+      <img id='damagePicture0'/>
+      <img id='damagePicture1'/>
+      <img id='damagePicture2'/>
+      <img id='damagePicture3'/>
+      <img id='damagePicture4'/>
+      <img id='damagePicture5'/>
+      <img id='damagePicture6'/>
+      <img id='damagePicture7'/>
+      <img id='damagePicture8'/>
+      <img id='damagePicture9'/>
+      <img id='damagePicture10'/>
+      <img id='damagePicture11'/>
+      <img id='damagePicture12'/>
+      <img id='damagePicture13'/>
+      <img id='damagePicture14'/>
+      <img id='damagePicture15'/>
+      <img id='damagePicture16'/>
+      <img id='damagePicture17'/>
+      <img id='damagePicture18'/>
+    </section>
+    <section id='actionOptionOverlay'>
+      <div id='damageCheckboxes'>
+        <input type="checkbox" name="shipDamage" id="dmg0" value="0">
+        <input type="checkbox" name="shipDamage" id="dmg1" value="1">
+        <input type="checkbox" name="shipDamage" id="dmg2" value="2">
+        <input type="checkbox" name="shipDamage" id="dmg3" value="3">
+        <input type="checkbox" name="shipDamage" id="dmg4" value="4">
+        <input type="checkbox" name="shipDamage" id="dmg5" value="5">
+        <input type="checkbox" name="shipDamage" id="dmg6" value="6">
+        <input type="checkbox" name="shipDamage" id="dmg7" value="7">
+        <input type="checkbox" name="shipDamage" id="dmg8" value="8">
+        <input type="checkbox" name="shipDamage" id="dmg9" value="9">
+        <input type="checkbox" name="shipDamage" id="dmg10" value="10">
+        <input type="checkbox" name="shipDamage" id="dmg11" value="11">
+        <input type="checkbox" name="shipDamage" id="dmg12" value="12">
+        <input type="checkbox" name="shipDamage" id="dmg13" value="13">
+        <input type="checkbox" name="shipDamage" id="dmg14" value="14">
+        <input type="checkbox" name="shipDamage" id="dmg15" value="15">
+        <input type="checkbox" name="shipDamage" id="dmg16" value="16">
+        <input type="checkbox" name="shipDamage" id="dmg17" value="17">
+        <input type="checkbox" name="shipDamage" id="dmg18" value="18">
+      </div>
+      <div id='roomRadios'>
+        <input type="radio" name="moveToRoom" id="moveTo0" value="0">
+        <input type="radio" name="moveToRoom" id="moveTo1" value="1">
+        <input type="radio" name="moveToRoom" id="moveTo2" value="2">
+        <input type="radio" name="moveToRoom" id="moveTo3" value="3">
+        <input type="radio" name="moveToRoom" id="moveTo4" value="4">
+        <input type="radio" name="moveToRoom" id="moveTo5" value="5">
+        <input type="radio" name="moveToRoom" id="moveTo6" value="6">
+      </div>
+      <div id='spaceRadios'>
+        <input type="radio" name="spaceZones" id="spaceZone0" value="0">
+        <input type="radio" name="spaceZones" id="spaceZone1" value="1">
+        <input type="radio" name="spaceZones" id="spaceZone2" value="2">
+        <input type="radio" name="spaceZones" id="spaceZone3" value="3">
+        <input type="radio" name="spaceZones" id="spaceZone4" value="4">
+        <input type="radio" name="spaceZones" id="spaceZone5" value="5">
+      </div>
+    </section>
+    <img id='shipBoard' src='https://lh3.googleusercontent.com/6rvjtDscQeU4gn5TRguUK1p9FxWpQmzas-ikS7dQ7Ta5_K8v9rfsgBBtk1CM5w9Mx2FW16SSQ3qYpQdz96G-mgnC2Qa09xpVfEIijBAuAjSZ8Ge_qPUUKciTmT_vulHVUJ9Od9BDJhsoxB_fGKPodcjo7-FOUwLKu8qaVMgWLGPpP5gmm80SVKXw0gPUDwwDaf2HKqccioK6ewoOfQxzaA5Q6YFcdczvTVkPAAOtPf31l98zrul7HKSIEjCgAcXCHU7Jo6ymJW-VqnF-p9rmMN_EuCgveaaxkOibBPePSKyhfTRXXhLiYztpZZcPBgVRaR-c2pQEGSur3bBhmMbeGXHwKeswmiRZIn0skLKE3xkxlfGmFq5x_oi6S5U5PB4x5uXcHF8NaiCdiMNB6RtWSLfRVS__u77mKaZfp_fluIgnlwSxGobiwS0vHLuJyld-ld3JQ9VOV9ZDuHLUvVJRklR2VQzBDOcqrkgeDOc0OyMtuGW3TfXwvjPuaJS83AUQzefDAnxzf0-pRrOIi0cOHdZhmF8DNfcP5CY3sOomPoiWnKuBDZPgrIJBOv_48vsFDEfeTjWycnFrflg_H00nonmlTlQ_MPjllPybAUNzBtPGdmAt-RtGsca3M-WgyflP45wXdp8Cxqs0eLjUsORkCKoyjyCeIrPiV11o1UI6YjgUyfYJrHtd4EvuvUzCUs5jSu4QJIQ2FtobgGdZGZ-iz71MAisg6gpJr1hvMNmGmYukfxn1TXt9-BsCtISwOEQAShGP3TR3o3YLEsZ84ECUFYOKcUgMBHa7HFYKTlGPhES6ag3WPQ8NPhLKJmhqYNnwG9amNuIJwfy1G_PTVJWAxMFu4CVJErx6uWm1XNR3p8nkgVa5UCUTsFutmUYtMMr0Pj87IyRx57eVBcJIwPr3CyIJZk-_ktIExNWDNS9jnO64YIyV=w1329-h1329-s-no?authuser=0' width='1000' height='1000'>
+    <hr>
+    <p> Kludde Fleet: <span id='kluddeNumber'></span></p>
+    <p> Ship Energy: <span id='shipNumber'>20</span></p>
+    <select name="character1" id="actionSelector" onchange='actionDescription(value);'></select>
+    <span>~~~</span>
+    <input type="submit" id="confirmAction" value="Confirm" onclick="takeAction(actionSelector.value);">
+    
+  </section>
+
+  
+  <hr>
+  <br>
+  <p id='userMessage'></p>
+  <img id='messageImage' src ='https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png?20091205084734' width='330' height='450'>
+  <script src="script.js"></script>
+</body>
+</html>
