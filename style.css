@@ -1,0 +1,446 @@
+body {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif;
+  z-index: 0;
+}
+
+/*There are 4 main "screens" mainMenu, loadScreen, selectionScreen, theGame. mainMenu should be visible at the start. The others should not be displayed. */
+#loadScreen {
+  display: none;
+}
+#selectionScreen {
+  display: none;
+}
+#theGame {
+  display: none;
+}
+
+/*character images are the little colored circles with character portraits inside. */
+#characterImage0 {
+  position: absolute;
+}
+#characterImage1 {
+  position: absolute;
+}
+#characterImage2 {
+  position: absolute;
+}
+#characterImage3 {
+  position: absolute;
+}
+#characterImage4 {
+  position: absolute;
+}
+#characterImage5 {
+  position: absolute;
+}
+#characterImage6 {
+  position: absolute;
+}
+
+#actionOptionOverlay {
+  z-index: 1;
+}
+
+/* kluddeAmount are the white numbers next to the red arrows. They tell the player how many kludde are in each space zone. */
+#kluddeAmount0 {
+  position: absolute;
+  left: 520px;
+  top: 90px;
+  font-size: 30px;
+  text-align: center;
+}
+#kluddeAmount1 {
+  position: absolute;
+  left: 890px;
+  top: 300px;
+  font-size: 30px;
+  text-align: center;
+}
+#kluddeAmount2 {
+  position: absolute;
+  left: 890px;
+  top: 690px;
+  font-size: 30px;
+  text-align: center;
+}
+#kluddeAmount3 {
+  position: absolute;
+  left: 525px;
+  top: 890px;
+  font-size: 30px;
+  text-align: center;
+}
+#kluddeAmount4 {
+  position: absolute;
+  left: 160px;
+  top: 680px;
+  font-size: 30px;
+  text-align: center;
+}
+#kluddeAmount5 {
+  position: absolute;
+  left: 160px;
+  top: 300px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* moveTo is a set of radio buttons which only appear when the player takes an action to move their character. The radio buttons appear to let them choose which room. */
+#moveTo0 {
+  position: absolute;
+  left: 520px;
+  top: 300px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo1 {
+  position: absolute;
+  left: 720px;
+  top: 400px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo2 {
+  position: absolute;
+  left: 720px;
+  top: 650px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo3 {
+  position: absolute;
+  left: 520px;
+  top: 750px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo4 {
+  position: absolute;
+  left: 300px; 
+  top: 650px; 
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo5 {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#moveTo6 {
+  position: absolute;
+  left: 520px;
+  top: 520px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+
+/* spaceZone is a set of radio buttons which only appear when the player takes an action which reveals kludde in a space zone of their choice. The radio buttons let them choose which space zone to reveal kludde in. */
+#spaceZone0 {
+  position: absolute;
+  left: 510px;
+  top: 70px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+#spaceZone1 {
+  position: absolute;
+  left: 930px;
+  top: 340px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+#spaceZone2 {
+  position: absolute;
+  left: 930px;
+  top: 720px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+#spaceZone3 {
+  position: absolute;
+  left: 520px;
+  top: 960px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+#spaceZone4 {
+  position: absolute;
+  left: 100px; 
+  top: 710px; 
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+#spaceZone5 {
+  position: absolute;
+  left: 100px;
+  top: 330px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid red;
+}
+
+/* dmg is the checkboxes which appear when the player takes an action to repair specific damage to the ship. damagePicture is the red circle that indicates damage to a doorway or system on the ship.*/
+#dmg0 {
+  position: absolute;
+  top: 280px;
+  left: 530px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture0 {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+}
+#dmg1 {
+  position: absolute;
+  top: 410px;
+  left: 730px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture1 {
+  position: absolute;
+  top: 380px;
+  left: 700px;
+}
+#dmg2 {
+  position: absolute;
+  top: 630px;
+  left: 720px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture2 {
+  position: absolute;
+  top: 600px;
+  left: 690px;
+}
+#dmg3 {
+  position: absolute;
+  top: 740px;
+  left: 520px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture3 {
+  position: absolute;
+  top: 710px;
+  left: 490px;
+}
+#dmg4 {
+  position: absolute;
+  top: 630px;
+  left: 330px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture4 {
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+#dmg5 {
+  position: absolute;
+  top: 390px;
+  left: 320px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture5 {
+  position: absolute;
+  top: 360px;
+  left: 290px;
+}
+#dmg6 {
+  position: absolute;
+  top: 480px;
+  left: 510px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture6 {
+  position: absolute;
+  top: 450px;
+  left: 480px;
+}
+#dmg7 {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture7 {
+  position: absolute;
+  top: 270px;
+  left: 370px;
+}
+#dmg8 {
+  position: absolute;
+  top: 370px;
+  left: 510px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture8 {
+  position: absolute;
+  top: 340px;
+  left: 480px;
+}
+#dmg9 {
+  position: absolute;
+  top: 310px;
+  left: 640px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture9 {
+  position: absolute;
+  top: 280px;
+  left: 610px;
+}
+#dmg10 {
+  position: absolute;
+  top: 440px;
+  left: 640px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture10 {
+  position: absolute;
+  top: 410px;
+  left: 610px;
+}
+#dmg11 {
+  position: absolute;
+  top: 510px;
+  left: 750px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture11 {
+  position: absolute;
+  top: 480px;
+  left: 720px;
+}
+#dmg12 {
+  position: absolute;
+  top: 580px;
+  left: 640px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture12 {
+  position: absolute;
+  top: 550px;
+  left: 610px;
+}
+#dmg13 {
+  position: absolute;
+  top: 710px;
+  left: 630px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture13 {
+  position: absolute;
+  top: 680px;
+  left: 600px;
+}
+#dmg14 {
+  position: absolute;
+  top: 650px;
+  left: 515px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture14 {
+  position: absolute;
+  top: 620px;
+  left: 485px;
+}
+#dmg15 {
+  position: absolute;
+  top: 710px;
+  left: 400px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture15 {
+  position: absolute;
+  top: 680px;
+  left: 370px;
+}
+#dmg16 {
+  position: absolute;
+  top: 580px;
+  left: 390px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture16 {
+  position: absolute;
+  top: 550px;
+  left: 360px;
+}
+#dmg17 {
+  position: absolute;
+  top: 515px;
+  left: 280px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture17 {
+  position: absolute;
+  top: 485px;
+  left: 250px;
+}
+#dmg18 {
+  position: absolute;
+  top: 440px;
+  left: 390px;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+#damagePicture18 {
+  position: absolute;
+  top: 410px;
+  left: 360px;
+}
