@@ -62,7 +62,7 @@ function resetTheGame(){
     {name: 'Eye Drone', description: "Eye Drone [quantifoam] Eyes that appear wherever you need them. \n Action 1: Defeat 1 'shadow seeder' that is attacking your room. \n Action 2: Choose a space zone. Reveal up to 2 kludde in that space zone.", picture:'https://lh3.googleusercontent.com/4VGwzTyqe4bcR-p750xVB3LHu0Ukd7X_yzdyOwvNbjf7Hn_EELM3HS1Rz9yJfY38k4mhwSKDwfz42D4kCZvyjAo0i9q7YYtGgrAhybP1cY4wZvz7V5ml8ZqSRqJTybH_IeGRiqcATtUTNSsK9TbNFpw1egiXN6DBATQ2CZqUnebh82bBdHcvHUWsESTJFJgO3btDZNTcW4gKv6nqT5QYVJdBlgpQLyU58y8UhfRc6bcsOf63poUJRL_K1FVyeIdeZlz7u3RhiM2ztdFdnzfh3VU3kkUy7MPBpuT5rXG6r_cr54FZ_AmVfZmpxdn4Yz0rYOv4sW0BcrHxUXgsJTsjHoAepU6EqLXfIjCgQKag8CMm9tMmf4WX_0s6uL6gAvhxh1KpdFGnJtp696XbDTUw3xpvvcuBNsXp5sv00fgjqjvPaiFMt8FEqRRhW2Bs7GGu0mb98cQZ_DxLUDk6YQiO_nHLeJs77in3amc5xi7jY53XzP8xAnmVxBTcEZG1mQbZGPf5F9aCaqAN1u2X5Z4fo8Qp9SuGZl-Y7Hgv9Qo_ey8ke314G3u8dkCNjHmYLg0wKZaD5TWyIRLdTmTy2wCCTiFbaHJ5im6gXXYjfmReL0Ggi36MfBrG1T9XByXPsecRMlYWi1wNjHe79R3-vxB_fsl5mQiuJnHoBBb_KShxDCUtBD-fMXoRSwP80MKL_ZFVq1e4u72awkRN62_16Y2TPxSRCeYmU_nOz8ZoTHC8EA_XXBn4T1rm9iIksGBfSfXfPpmN9FwAuaQE-tn5P353f15E1Rsxfv_Q6UQxPc3LbPB15BjRCxa9a5_114Avbc5lrPMWwDSFJuGtzNXTFHe5gbozmS3xxmtAB-Jsm3okuag5OhcEcQodLVIGFxPLZ3-a8dVyD-oE_gcOw83eLtssqhvNJMFYEEQNg-jgNkaZ9m9bYNOk=w825-h1125-s-no?authuser=0', actions:[{label: 'Eye Drone 1'}, {label: 'Eye Drone 2'}], selected: false, refreshed: true, charge:3},
     {name: 'Fixit Grenade', description: "Fixit Grendae [consumable] State of the art incendiary reconstruction technology. \n Action: Repair all damage tokens on any 1 room of the ship.", picture:'https://lh3.googleusercontent.com/2G5adU6XeuA8fE5p1-dZqb134ige0w1-nvqStrhr8IHLSXLI2F80Gnp4IZ6VkofVTcHYdSzp5kZWnTv1Z_c1FZzY9QR9YEWRktuaMkp6JCela1CuD-n6AN8VP43mNNZaZOYLcfwnOkFWT5ktnoOF8IOlHpZVTQuDCM7NPdCRlOrYMGqUmhsnyPp4jLpjoOQXspDKrB5VoRzKVxxIrwsrY08lNFKtMOO5Ww49gqdcW5SnmEA7NlBlDPH_Tc7gjoKN6j_rJTQQzttwKeW-AAfY3Ni2doTjNeXHisnKmtzdzgo3od0Vwr6msoAYIRtphypSXGmcJkKZeYxmDTNVAp7n4_VhiL7VQgTQhcqQANWrGQn-4z8FqzRTX7wvMd9c2rgIqixY_zavLI3qWxpkp36MOil3eLXX-2rUx5Ns-mdePlb1Kc0fx_fOQL6TVde0vXg_LWhI-YWzNzWZMZDq5X1dDfB6TECBktwiwRyWacqTBeDQhaGwiaqh1eT8qj7WdPC-WkE_1NTXvwhqAeMBqLftGVohHsWqweJ9zdJBGPLB2KYt8b73aYnPsOwuCcfnmAQAj5uV-d8TyIR1biYbJXdB4C8Xxb_YyzOjgbpdaZnXQtmYthTdbru23jKGt2nWnDgKe6NQM8Q15LFQ47a5OD2bssUvlnqv841l48JBdowYOX0vjA0YUikHyP0il5_SmxFR36JwfqPtwJ0-f0LRJVbPlCnqkICYftwzDWcbc6MxGouQNQk5NlJoQnY9kfXVR_FJcfz8TGo6sFUgu5z8WS9yHdGtiWblIp8nHP7h8WQcqvFQoUJ-bPixEPz4hPR4erpncmN1giK6ibfjpvq5xrndczoXj86xdZhf6LSBbmIAQIFJAHs11tKwq7yMlCgS694NhADBIh8nf9_IqKnX4F1PvJnRkKNQfCK6-IT1pZlrZopy40q1=w825-h1125-s-no?authuser=0', actions:[{label: 'Fixit Grenade'}], selected: false, refreshed: true, charge:0},
     {name: 'Handi Boots', description: "Handi Boots [quantifoam]: The quantifoam creates tools as you walk. \n Action 1: Defeat 1 'kaboom pod' that is attacking your room. \n Action 2: repair all damaged doorways in your room, then you may move through 1 doorway.", picture:'https://lh3.googleusercontent.com/B__RMk6hphYweWnoYdBdEZtXf4uqfbXGqWSCGmZ2ptou4lpMqDY2IZStQPhlu7zP4O7MQbds5nT17t4oh619Zq7MmqYacyuKF-Bcc2momPurZHpJwQLs-g-gaomYYEUodkKxmdJY-Oxgxzzbpgu_OqgDHFkzmDRDuhjJRs1WlZe9PxYhVouwx048n1gqJCLZTIq-Do7qaGyf4WNV1geSfg9oWmZWolEflU2lx7BkbvFmJExtehDKpJSNlSWn58LApual47-SVKau-3m7kNdaQMJhV-itayb5ZQfPwZ-e3BPuRwq4H3L1mcvd9qxY0_sc62e3ifTZLAcHnPuyzP3cH3vSxbubBKHuqAGw2ydqzvyiWdpWEoPnjoFdYU05HP3aq-xMCJje4L8CVvXLgaf5FpayhEJXjLIbayty35l_Emvk5_sY-6t6H-fKygdRIvnX94DSHejzJnXXsX2Tx0S1lDWbaAp3FUEi-oNAIpDG-LCCC9PO5PvtloZlfJ6Ut-dG3HVTRvrs4mFRgKUnjtrIIpOQRo1Ni_z4nFBU1q3DEGmsp-hrkHgWs5iH1kZzRtxGDVuKWtDrqdujl1IkRMSBSFkUyH6JWciPrm6VX1oZmOxhDblIX08ObC2aBpU1FkkJHQR9oYf-EFtRWdoxp82Nil83A5zafSAU8QwMWXcSQMoUKupprVyKGwVXe5ZGmOKeOVPxvP3xpHS1srjndX6K5bYcvVtnQ61lHGLAnS8LMSZhWiZM45_WnwlVOkMQqiiOdjL1ZFD-bybN7284ZNJPgnYDLaPXEHcNOjwVC6V8y_yoxalpGVBGDE1XhkUTk6WytmeFh43QtEMK1IJYVtaHvdvHj9SZOed-YbrJL61Qy5AY1ETczSvdrQKnRTC4O3ySHomP_hbc4N_gZfSZAIJA0ESI_DTxVTh58pFRqTWod6wvcnvm=w825-h1125-s-no?authuser=0', actions:[{label: 'Handi Boots 1'}, {label: 'Handi Boots 2'}], selected: false, refreshed: true, charge:3},
-    {name: 'Hypersonic Wrench', description: "Hypersonic Wrench [dank matter]: When you need it fixed in a hurry. \n Action 1: Defeat 1 'kaboom pod' that is attacking your room. \n Action 2: Repair up to 4 damage tokens anywhere on the ship.", picture:'https://lh3.googleusercontent.com/_hSj1-fL6YHP4LS9C6miRob2gTH2kqUjyp8J2LOY3wU7MEM1HodjXtBacLi1WKY-FF8-fC8fKch4nVJo5aQgVPgr0iL0FpZWxntXYC3EoTHAAoICC-mGUXSquvZu5kEKslbv3ZvE4HchS6Sv8mhkFxrDKoXeg-p7XNxIFN8SPiaGgHOtmWdQu59xf87q-j2GeUPYBMznwNvPcDx3x8_CmOxwWnt3Gdv8gEsiXJpSMO5pfsRRIYU_8G4MR3Exw4-0Jfvjk9PdIzq2YVYvzyX1zATvOVsxGotXa5YVzfW87MS6SqcxCeAunldGwGczFsvdoQxIe8moqeo1noC1QEFvvH406fVPCA_lJjhY_xJXfr1PgLbZ5_C6AmRbShSOOepFWaBS6RS6eFlBE8P72SfLswDczpvrBd50M2icZ1Qi8h-ajBQlMQ1TOqNIgRsHU1GN7tNrODTjDMH5cQ1ngr2EV-j2EwwhuXuBegErzoRUp1VxQccVIEGOgVhHMnRohRJBNRA4ZKF0sRy_DAz_O4Vtgu-z6CGKVQ4sqBPnL3AfHxnvPKuGMDUHt3KyD2tV8oPQFgVxgQZ96TdFgSkXfjqcNEgrOO8yUm3cPOSwAvnwMot5lxhZS8WcwkT_emLyOpsL19kECp1q-757DYX9X7HtYTQtjJ1Otnemq5aUbL0zhRBIxG5OinLutFcHYoDq5r0CtYGYDHES5cKsilwAQovRzub_9mn4Y7842LgjJKm9yygFBbxnZDOCM2Aw-pz3g_f-O1xwGt221aZ_wx1vTvdIrWvmREemRx1dI9wXwIMSATBWJdT9HaQk3e9yvFm9AF9kQWGqSfHVlxl8CnMLWv3xI9n_a8nz8XXeNrbUmaLt8BYmBQ8lmGtcYQ7naGiP0LJZaeMuwzdZX6Hub-1cjZ-e0X2wuIrty-f13tz17sAM6QLb-SWo=w825-h1125-s-no?authuser=0', actions:[{label: 'Hypersonic Wrench 1'}, {label: 'Hypersonic Wrench 2'}], selected: false, refreshed: true, charge:3},
+    {name: 'Hypersonic Wrench', description: "Hypersonic Wrench [dank matter]: When you need it fixed in a hurry. \n Action 1: Defeat 1 'kaboom pod' that is attacking your room. \n Action 2: Repair up to 4 damage tokens anywhere on the ship.", picture:'https://lh3.googleusercontent.com/_hSj1-fL6YHP4LS9C6miRob2gTH2kqUjyp8J2LOY3wU7MEM1HodjXtBacLi1WKY-FF8-fC8fKch4nVJo5aQgVPgr0iL0FpZWxntXYC3EoTHAAoICC-mGUXSquvZu5kEKslbv3ZvE4HchS6Sv8mhkFxrDKoXeg-p7XNxIFN8SPiaGgHOtmWdQu59xf87q-j2GeUPYBMznwNvPcDx3x8_CmOxwWnt3Gdv8gEsiXJpSMO5pfsRRIYU_8G4MR3Exw4-0Jfvjk9PdIzq2YVYvzyX1zATvOVsxGotXa5YVzfW87MS6SqcxCeAunldGwGczFsvdoQxIe8moqeo1noC1QEFvvH406fVPCA_lJjhY_xJXfr1PgLbZ5_C6AmRbShSOOepFWaBS6RS6eFlBE8P72SfLswDczpvrBd50M2icZ1Qi8h-ajBQlMQ1TOqNIgRsHU1GN7tNrODTjDMH5cQ1ngr2EV-j2EwwhuXuBegErzoRUp1VxQccVIEGOgVhHMnRohRJBNRA4ZKF0sRy_DAz_O4Vtgu-z6CGKVQ4sqBPnL3AfHxnvPKuGMDUHt3KyD2tV8oPQFgVxgQZ96TdFgSkXfjqcNEgrOO8yUm3cPOSwAvnwMot5lxhZS8WcwkT_emLyOpsL19kECp1q-757DYX9X7HtYTQtjJ1Otnemq5aUbL0zhRBIxG5OinLutFcHYoDq5r0CtYGYDHES5cKsilwAQovRzub_9mn4Y7842LgjJKm9yygFBbxnZDOCM2Aw-pz3g_f-O1xwGt221aZ_wx1vTvdIrWvmREemRx1dI9wXwIMSATBWJdT9HaQk3e9yvFm9AF9kQWGqSfHVlxl8CnMLWv3xI9n_a8nz8XXeNrbUmaLt8BYmBQ8lmGtcYQ7naGiP0LJZaeMuwzdZX6Hub-1cjZ-e0X2wuIrty-f13tz17sAM6QLb-SWo=w825-h1125-s-no?authuser=0', actions:[{label: 'Hypersonic Wrench 1'}, {label: 'Hypersonic Wrench 2'}], selected: false, refreshed: true, charge:2},
     {name: 'Implosion Launcher', description: "Implosion Launcher [nanites]: Point and click and the nanites condense into an implosion. \n Action 1: Defeat 1 'lashing root' that is attacking your room. \n Action 2: Divert the kludde's attention towards a specific room.", picture:'https://lh3.googleusercontent.com/Q92biAK9hjiSzuciPuHMlWVHOmwf40zqG67b5UJ7JchcpWGDWUyJGdPGVqJX9h5wWN8DejDRSMivJdOSIKbisEUBiqNnjxr4sBrtmSI2De2QwuOTx4iGwIeOK4egXeonkhSCUn2zf7wEtLiRexFRTCfBSUWqA1zNwQsNXHmcHRPvP82E4J9-_D-uLPNifSuCHYv7uJ1Yd-SAZZID8qjzfcqfglUkYKmZfbAfob3R62kV8c3OR_jJ6LUqP1fSR543tTWRDApmNO1uGJXMj7EatuafYGGn0qG01C_ps9R2nuGqV45vX2SE1GYTN-FNHsi0QIVd98ecMVGqCCpiJTAvNM8Gjl8V1i8e296IypsaTHfQcbFN6ME5YpiRSuQUib2snSTjfziUubQGAJWzQkIE0Ft4BLW4JA_6096sqSmXZn1h48HeiyZXCw0pdFh63jLVFI5jkLWif4EVRdpLGP2lOpaiaDiUyALXlY8PsQ19fKrYSfEVfYKFLvKzvNtLy20fXYAC6ECJnpEw3I06St4_xlIGfFUklflJG1zldK7U1x3A6HBd2F9fpPOrbJY1eVJ7Gee0bhF_yDuZz3tu8WFrVAWsEstmTLWKKDW9MjTXAKlgN9VyG6BFGMHJxXQoYJe3OEorvVlY3x6ATWdf8dEq5sMkUFa5zxwzUk88T7SbpzuxMhRghzpaa-8RFd-LXLx4xpgfQj3vYwXMtaeagcm7LjbFnLqTjXpFMjG-CR4PA1jmE_M9k-LB_CWs-CoLR20lK_iubfYx5ZrftYK9PlYHLBtBQxk-qksOYw6CiW91SQrDdXVwFJiYdlvqHZ4R1AWdX3YGIRtFRu6YYWYG5qlk2i6p8pkCBMgKyRzuMQFPgu-zy6kA7mfjqveYkLzF6zrPzzhAgE1FpLE7p-ddURgLPq_Nix3Qhl7Ih-dClX61YCct3Wgz=w825-h1125-s-no?authuser=0', actions:[{label: 'Implosion Launcher 1'}, {label: 'Implosion Launcher 2'}], selected: false, refreshed: true, charge:1},
     {name: 'Inferno Blaster', description: "Inferno Blaster [quantifoam]: Squeeze your paw to spray a torrent of flame. \n Action 1: Defeat 1 'big bamboo' that is attacking your room. \n Action 2: Defeat 1 'green matter blob' that is attacking your room.", picture:'https://lh3.googleusercontent.com/2xX95HUN3uw5FrsNWZC17BGzVU0lxoGcITpEa8Q1aWAk3F0BMC1HXAFvJArWUt_2U3mlu99TnI0ulGomOShjPvDXazMaf6nDvNRL7KOmt3Drd2asKv1zf-S2DtUraHs67BXxN75rHOGPC-nfnG7sGFnE5jg6nRiq9AMCqfGWdbklXwyZ_i_dg5amjHwKCfJNddZRTgzI1Nh8nZXot7Le2d8FIry6pk6S7F-Hjl5WKkWds7eCQzWWCD5OqyZI1HsGx4XLTCb4uwU2SN9-bDR4h20bRU2K1jouqlCk0XSN7bryVKVfMLvzznYM9RUoeXgpbFG4t8f8RXueGc9nDNbGucR6cA_Zr_Vqy4lyV1ZRhEBGskGy8q9D_jZRzZAkjb53VYhAe6j5XRg5MuvIsTL-zouM3x7MDUR5YpXsimirwpdj7I5PHKSyFLI_4LrI2aP3OqsU52rwEN5pHIXilWlwvQ_B351ClZo6VHX8r2tbXlxrSbxEAAVJd7Yv9SAWyus_KwPVfLPpCyXlplpQ7e1eDMtOfHCLU5yRQfibAIPsddNr9IhdOi2oRulCMz8_6x3PFNgnVIwNxM23Lgr9625gXiKPYDTQ701veVJ_32HFHS4vY4LiTBIlyS7b4_dYuIY6roLZzhi-0M-oyYOO4maX1p114qTXkdR2dnUIC9sN3-agz3vqiM9aFH2UU8Z0AwVLXru-t2OlyIvUFbBpp7fVdrR4R10XlpplLK_URnnPqhnF3CkSNLbhcy50sTf3-R40YsxnLpnGk66yQG09FcYTAEgdu7EtEqD0a_Nco_yTrwRTue7MMmOOMKBhF2u-5pPistjjrKuD3KtjkhWIS2DLUQANvKUbf8sFOpPi-QTrQJ6JN8gFsuAehgy1GRs4QKXdI4URgRgEJKHdJ1U9I4j-NWhJVS5D4eZ_0olNE4vUiH7rKhsk=w825-h1125-s-no?authuser=0', actions:[{label: 'Inferno Blaster 1'}, {label: 'Inferno Blaster 2'}], selected: false, refreshed: true, charge:3},
     {name: 'KEM Spray', description: "KEM Spray [quantifoam]: Katundian Electrostabilizing Milk. \n Action 1: Defeat 1 'green matter blob' that is attacking your room. \n Action 2: Remove 1 infection and all stagger from 1 player in your room.", picture:'https://lh3.googleusercontent.com/vS_MJoik91x6Q_XTXSg7YwS-aa5hN9pQjKMktxwSRk00b7dRc9tkJnuKhQRelSPRCYuxbSRjyvrpSxeg8oqMnQw45woq1XgBx8OoR9LbNyWMxWtuwZyMRjezNTzaexuzKVDUGIniWP9cP6RQzinW1Ji_-xlrDEzKXUQQANYT4Let-Cdjx0QamhTVWq9VaOCRXhb6eOlGvnMgUtrKXLNP-vi-yzsDZxKnKrrl6ShQ0cp_DNaNCqz-4CdG3TkY4u8bC2KfaXrXUxrz6XywQiTzObzo3cpyGG24BsMd4kul17ytK1e_7W-cZyELJTZWNwqQAJKz2wIrGWxdq60IE2paNAl7Ht02CnP7_BI61xyrKna3PKyzc7P6RSVBaSFjiPKfaCgLC6NIJNjvwD82f8HAl-BY8gjos-GOgHG9BeIeOM2siFVYzY0uVAak7t2MEg22nkBcmjckQG4km2PP-YJQChbak7Rz9XA3nJEtlxawFTGy38o5KnjfogJhvPqjCqqg__Rm_0TeMD_mDI5kIa6jeI36SBaQezr1ql437KisVGvZmA5aBTyFf4vhjTEXGvBfrCuOVnwIPTqXElWUfKUr-pp0mEPEfFgTlPO1icUr7h4blp__vzSaNKnHC3nDe5WjbTjgr2ZRXGHP8kVuKcn1yzex1X9BIrdnX274AvOY2-yGkVa7gGX9eLGtFg7nDKtkMhvTTgI-xtWR_SSpnHbCo_lK7GdpokSveGsAnyYSm1fmVQPVXiApJtlWhAe4Mdj3oKcXxAQ30n_xS7aaJyc1PdxUCYaMGonCSXs06lqIZFYWLoGv9JFPJqAcyyMkaptIteHOYkjHXNZmqNcRDdHU1obkKTPxXJi1ZLIfTu9O7DyW33AaqdfFn9Q0FnmxtnQfPybXvo4pnspJE_rzANtSkKy4UA9wfkjpjcCXcoZvuR92QTAF=w825-h1125-s-no?authuser=0', actions:[{label: 'KEM Spray 1'}, {label: 'KEM Spray 2'}], selected: false, refreshed: true, charge:3},
@@ -73,7 +73,7 @@ function resetTheGame(){
     {name: 'Pounce Suit', description: "Pounce Suit [quantifoam] Blip through the quantifoam field, wheeeeeee. \n Action 1: Defeat 1 'green matter blob' that is attacking your room. \n Action 2: move to any room of the ship.", picture:'https://lh3.googleusercontent.com/_jDzF1utBacF1S5A34LzZeGv6Rqp11nuJxSOz1gpUS19XZBPbPCU3CWqZNiicBKIcZW2di_RkfpFAsKZg8406cPfa0JFPVAdnvl0Q5EGvx7O3tq1_uRJirsyg5NFbyoXBDAY7KQIZbdJTrhtDpFYNcbRIxmCR78Bq7whiyF6Vuz-0XR-As2uEVKs_vxm1umzIVikjcKO0D1_AvBwDpxnv0_kNK3OrTcq8Znbii5KqPLb5N5bmhNTDx7_QEpPaYSE3goHRcUnDskMufq-BnZhGFbTCkKIHgb-78fyE9tvqU1McT8_FgjSmMegFvYd1OfKZE5wbv4yr7cRuYTggrymZ8gxDeC7lRxyQJjLBDe123YQCUvzEy-_KPmyKC1jvmwHOjuvXeMmlvQuvKJpzM_VTygUEU8dnWnoclsd4DWTZ_w4m7_OTh9ZhK7tc04gtOQcieSW59VBKJESeUp-OLquaJFZ_lIhtmlfkoRrGmG8nfn3qUud5mEaKk8jaWDipMmhlYex6d68mm8XoOlG6hx_ZJiSKnNKue1xMv2aOCZLEF1v3-eKfqK7ritqqeByKjXjTH34NB4eepEowHsmWzHOr4DlN9GV2Gm-BgzQ9KiVLELnwV3RWWiSL6HPkCRb3xcaHpZubMxZlGqJSpCx8f3IEMWsLevY8A8i4k8MQY89jM4L7gJ1My8LItrr09oOKFjZDlOtlb4rDNCWkSmSSp0A-hzQYNt-lobi9fPdjJKg_v8mLi1uPAcdbhCHsrCJW5N3YjYR_EW9h-nzNFSUVUGezgn321Fwa1Pd_cQyq1OY47Ju0XcuBIxbOc0lVmM1n9n5sTnCsh_3w_zv6_rqGSYII135NIq3U91rfff6YOeIzR_VzTlXG9imTSO-Yw6N9Brtsha6jsc3sFfhZ5eOuZEZVGRUVyrepKd26ogzsRdGASKumBWQ=w825-h1125-s-no?authuser=0', actions:[{label: 'Pounce Suit 1'}, {label: 'Pounce Suit 2'}], selected: false, refreshed: true, charge:3},
     {name: 'Power Suit', description: "Power Suit [dank matter] Heavily armed. \n Action 1: Defeat 1 'big bamboo' that is attacking your room. \n Action 2: take 2 additional actions this turn.", picture:'https://lh3.googleusercontent.com/0iVvHuwBKa1VCq4ly6y-ZcZwQU0K5llBCHEWATwd9b-T1JcBMn-B_LBttC3cYJw0b1dKt6YzWLL6C4bZ9DeiQfeOiTPcCxJTx3g4U_xyn4l4XCrb2BJvSbcsN72kPe5KyckhtT39H5a1Keoww-Y5iqgVgubRRMeUSNjhFraYmlw7vUFa373Cxr7zoLqqgdqAvUfGaOvVUrcawwzKNfQnDMmUKQN9KVGJSGn1vY4vNBBiyK3vAUdXstdwqyEAe0q4hUq7p8HfpsS9bNyUrJ4WbhNlXtesdrOPEsOFlmQc2JwABhL1U1j1n2JMSUgbPfFkGubI9o5eorK0JoPqF3ORc1_baBqUXomUxfXH0mUWzymlko6wZE8ClGqfLx8lOsFuuMR_y-A0ykrTjUTucdKc2dMR72tvqYcgH7FcS_7-BSHgQCw2vZtGthr83SXJMdU4B_HWhsLS1B78JevoeKOdRadze6ciraLebNAeKBIVgzHi6wDoB-0ns0P_v8kp1fXVjdDGb9YVDO3s8c_66k9OVbV5BnpR0I2wfmiTjekg5Z_D6q28h21F1mz0dIeuMDR8A1XjxsdB3_qkT5FaK-igVUjY7ee0gf6wH5sdtlVZRurbslCRRyUdzw9QTTnzh_E2Uw_cIAkSdd6EIXhCVj__-upHOyqXIHUABfmqt4OeetgiSYPWrPZ4joIJtsLNcrDb-Eq1cF0-lIuYDHkJqpr3AfK2PF6ghvJFzBSkyaTfaEw78mc3KbLDueAHvA9isEKhYm1wAnjimhzdepDXj3zbAt0UsilldVXvx9hYmwZQVY9UmIPuZWzHexBnsXELtodmU3sqgDK-CW6RczQ44JKlyZY-JOdiCBrjvA05bcG4zfCwAJWNP8sfM8yNtVoAUlTdaBuGbxnLpI22N_3nQ2CFg48R248AWoDvJzey0zGP7q0Tx5oZ=w825-h1125-s-no?authuser=0', actions:[{label: 'Power Suit 1'}, {label: 'Power Suit 2'}], selected: false, refreshed: true, charge:2},
     {name: 'Quantifoam Canister', description: "Quantifoam Canister [consumable] Be careful, it gets everywhere. \n Action 1: All players refresh all quantifoam cards. \n Action 2: the ship gains 3 energy.", picture:'https://lh3.googleusercontent.com/Fr5oyQtb5RZXTxSMPDXTX4pRFZ0EMNUiMAJZSIYxIYo6XZMI5i9uoUgvZDn-8y6cI71aKifPuFb0PjHkoMYgWopaQJgvG64zmKDV-UUkT0d3uDKh0Eh3_osrelughF2nlHxDKSlComuNECuI4VADP3WsobyQof6IyMPBhBboo7UuuBOaFDMU_ucZLTwGkYjt5ykgnIT_PusPV7zCy5CarWz1phtR0fP47nV2SjoQWk5d7-r5MJSjXrpguYaQYhjXUorufcEnhNr3SXcQTVjFtc_gkpCKwqpN1ox51yRx2RyVtgWFFKqHexojGTSfAIqDv-IPUMEoF2bQ5xphOqrBl247tG1uI1zc-Udm-RLaH3owUci1YxnZXnn3NgWNszX47YDP2cxUVwGjHpMaIxh9dvD_btP9pYXI5Dx19sUXShTBz8K5GLFMMEQRjZhUkOlDH5BCeBZHWzVdr80orWJiv3Hs5Kf3OR_rBrLb21oxXewMckWQrMbCbcrilRinnCkBuOmoeHdUl-xMxbN3uzf89QhMfTl9oz3Up5ZR74LkfA-cQ1JIYb2NXwmwdjIlNK-BwWq8PIj62TCoVYENeLxA2hEcoRe-M0y-QgkFKhFzSRoxINVFerFYWyZcllwnlKraGREI3LL3BC8y3bDCHLH7R-WHVoK1tFgoQJV1_bHVfBq8MX04pp1cLLsJ_iRNd3ZxW7lhUlZF1F9A7uk4yIC7kIvwlJc31Pd8sNB-7M2PG0BVTR9eAt2YKPXa02Rb_WtKx_-bIOfSvHR_X8NaCwhRkD8_zrA86mipfB-pkK5MoOLHcqu9OWbYyids1LfNgjM_qn2ifPkw6kZDi2f-jho51sSPmUiIslPkkeG0_V6Y2SUaHDsEiHEqzd9AHUgBrOOtTU1IMyVetewgLdb5_FsxPRqElTUZDsbQMflfse-vgar-io-z=w825-h1125-s-no?authuser=0', actions:[{label: 'Quantifoam Canister 1'}, {label: 'Quantifoam Canister 2'}], selected: false, refreshed: true, charge:0},
-    {name: 'Reboot Gloves', description: "Reboot Gloves [dank matter] Wiggle your fingers to create floating hands. \n Action 1: Defeat 1 'kaboom pod' that is attacking your room. \n Action 2: Activate any ship system. Repair that system first if it is damaged.", picture:'https://lh3.googleusercontent.com/u4FNddsA4VR8ZlC2XeBKuqA67e_JeqVM89NpZlqzn3LXsHGmEvunm3ipPI2x4-OdkIfDYEfZ8oFMM_v8TiUOpaVf8GroJX5PJfP8WxTyU0_JgFREm_zjtRxiJ_mKkssCo0D0TsJLQLzGrWazh-9FQze74StyJ2q2x_XU9Ig_KhXjDs0rHa1WGxUhXC7D-roJYkEZ7J7cA_ugUqcP-zxCPY3obwgWIz-WthARzN7Eolm9zOvwuzWG99ShSLN5ygTkWWIxN8FOU7hElBQDP5F6t7agYEji_uN0DERVcHez1mPqLf3p0H146iDwEB3zLjWkd6yjW1sYZiBTdvbxdAaogO1ZeW2Dz6FlIQ4CssBdogKTSE1m9bJdxq1hIVTFAHT3UThFNMgw7Nu8vdKJWjYhYa9QNv4wOMlLrdrSfWeTesRmu8e9Y-F7eS7EBONpSEDjmy-bSOjM37SX4LH2_Qn5xyw5EO5LQhAcCdVSPAmWTYWboV691HY9R_m2TT5PB1O5AlRTzm1LRTmnrH_Ktkji_S61qucmEs0ND4ANc8dPZRWv-dNi_w2MiXd0GzoV2P-FdHhy_OGOTCBlrJZgd8g55SWyDfdeddPLrVXHTq-cvCF0n_Sh5s3z5QRfsBL7SiPxskTZvgqds3A8O9acFPLJkpc-b45WMtOEuzc9lvTjpjTGzIqkGWF_FskyLEyGjZShricaGBFPHw510pdBuD5QtK6f1VIVclIAwPJo4RITauHAY9GDBvQ_XJjSZzG3pm11nZKwBuDABmX3Koh127YG2bEdo_GeNcaMLCKIzWfpfx3MB_Eb44mwDHhxq1x6_agv4VTHor1SQLm1vNFDquGnEqm8yCpq3PHevnwfu_9MIDkkv3TLsYFwx6xkI25jHgLZjVXNpaGANjnFFKVmhnWeT_1nSL2xGjvSkAiJHPANbMYNIC_i=w825-h1125-s-no?authuser=0', actions:[{label: 'Reboot Gloves 1'}, {label: 'Reboot Gloves 2'}], selected: false, refreshed: true, charge:0},
+    {name: 'Reboot Gloves', description: "Reboot Gloves [dank matter] Wiggle your fingers to create floating hands. \n Action 1: Defeat 1 'kaboom pod' that is attacking your room. \n Action 2: Activate any ship system. Repair that system first if it is damaged.", picture:'https://lh3.googleusercontent.com/u4FNddsA4VR8ZlC2XeBKuqA67e_JeqVM89NpZlqzn3LXsHGmEvunm3ipPI2x4-OdkIfDYEfZ8oFMM_v8TiUOpaVf8GroJX5PJfP8WxTyU0_JgFREm_zjtRxiJ_mKkssCo0D0TsJLQLzGrWazh-9FQze74StyJ2q2x_XU9Ig_KhXjDs0rHa1WGxUhXC7D-roJYkEZ7J7cA_ugUqcP-zxCPY3obwgWIz-WthARzN7Eolm9zOvwuzWG99ShSLN5ygTkWWIxN8FOU7hElBQDP5F6t7agYEji_uN0DERVcHez1mPqLf3p0H146iDwEB3zLjWkd6yjW1sYZiBTdvbxdAaogO1ZeW2Dz6FlIQ4CssBdogKTSE1m9bJdxq1hIVTFAHT3UThFNMgw7Nu8vdKJWjYhYa9QNv4wOMlLrdrSfWeTesRmu8e9Y-F7eS7EBONpSEDjmy-bSOjM37SX4LH2_Qn5xyw5EO5LQhAcCdVSPAmWTYWboV691HY9R_m2TT5PB1O5AlRTzm1LRTmnrH_Ktkji_S61qucmEs0ND4ANc8dPZRWv-dNi_w2MiXd0GzoV2P-FdHhy_OGOTCBlrJZgd8g55SWyDfdeddPLrVXHTq-cvCF0n_Sh5s3z5QRfsBL7SiPxskTZvgqds3A8O9acFPLJkpc-b45WMtOEuzc9lvTjpjTGzIqkGWF_FskyLEyGjZShricaGBFPHw510pdBuD5QtK6f1VIVclIAwPJo4RITauHAY9GDBvQ_XJjSZzG3pm11nZKwBuDABmX3Koh127YG2bEdo_GeNcaMLCKIzWfpfx3MB_Eb44mwDHhxq1x6_agv4VTHor1SQLm1vNFDquGnEqm8yCpq3PHevnwfu_9MIDkkv3TLsYFwx6xkI25jHgLZjVXNpaGANjnFFKVmhnWeT_1nSL2xGjvSkAiJHPANbMYNIC_i=w825-h1125-s-no?authuser=0', actions:[{label: 'Reboot Gloves 1'}, {label: 'Reboot Gloves 2'}], selected: false, refreshed: true, charge:2},
     {name: 'Temporal Loop', description: "Temporal Loop [consumable] This again?! \n Action: Defeat 1 kludde that is attacking any room of the ship.", picture:'https://lh3.googleusercontent.com/gSCElcMYVkCRpu8lJCjPVpu7Sz7IfFsQF4YDaJ8p1RohfhMy351klxjZFGuF8VJXzm_ddfrCp3KvdesiBRtsyFlNCeGtomnkSqeYou5J0qrLAJ50L_JlqIJnxM2l-hWyFxPZEYiKWDlpwk0ooIkyYZw-6wDq2-wDVL546eXKJwiGrEKhMMmsdE9J0-5fudr41xItnJ6-uKNRoro5DiUg61YDjCniEVc_y7Jp_m_mEbvBrCQJk226OzXF_3XABDxKEMhA4wu75PM_-EIqa7N_p_Irt4G7t06eHjvBdD0McgWBv24rKus-B3iN3Oklyk6fvKVlx_M4pnsrjnF7jZbHtX_YrRWp4-zG6-xt-bICznRlo-4jrXXb9rsRrTnTHA-R33TBEaZFRVMc9Fn5wqS85ybf1CsrfZT0XpCdV87ts1zGNF1EQ6mKBV_BNZXQPRJXwamFnzQIxmGgjf_Mgh_ow8LQ22ynCIcO4k4OimHmAZySoMntph4X8cZ2NJb7KlcyVQd5HQwo2EBfGVmsVo1_np2qK4y9MNZfSrcJDaVlLqt3BBgLL0reGzUeka7KoGF_JmDOIXaVvz-ZC6BM6gO_COAzTiJeySYjyNvzOI27e9nfnEFlh5oBUa0Fm_LUe5yTdZWj0QDeN592bCciTl2AHDkFHlNaXho37BgXrpD8zRVVUQ9PW-j05u732EVNgyYAkc8eMcz-67sD0AtGhchpLwpia8sH5KJd98oZiHn-S2A7tumRiLwjp_fd4fIfWSiiMUIfMtE_KRCkVJo7MA3OcQZoCgvxDQZ3iRpha6c0gmg_XWy_WuYl7psjbz0i1oz_wfWEIGjO1IAJDfLcAgHpp9b5qET1zB9PpyffB7VmGTaIS7wy5glgAP5Tcm3M9b9QijENqDS6r8244BS9ShulLzhvVcbFisXgwwp7XZepyj97sGGv=w825-h1125-s-no?authuser=0', actions:[{label: 'Temporal Loop'}], selected: false, refreshed: true, charge:0},
     {name: 'Viral Erasure Tool', description: "Viral Erasure Tool [nanites] Click the box open and let the nanites fix things. \n Action 1: Defeat 1 'green matter blob' that is attacking your room. \n Action 2: Remove all infections from all players in your room.", picture:'https://lh3.googleusercontent.com/fkas3kpk-17BV3HcYOKQJvY1OyJ3Ztagi9gWP-H5vima7GhxC5oMuOTDog50cqcQ1OA4Gv59l6B0TkQezxQ8lLxKzRsABDvWWl_xn-PV4jtjuWCalp-SDucUZy0OvPGMRDrTj16RB6REEnsmDBcO9Cl5qxjUXrtFOHS9nOUjnZG-3XZqYNN9mqFuMjf2o0CWUFPUd3OqZdsBT_ieBRSlQEv5c4gr4WgWJcT1D5NCf5dPPkqh6fxnSlqQ5Cm24QYDyiiSVdh1aBwdjBF3ex9-FbLZpcryh5SdceeeK5_j-ExTADiJ3i4kNZJK9wAfpsmLowDXBKqwnA24XzT2S9raFLN4lofUbu_O3kGfIl0DlxK0j2YDz9-nlVhl5r-tDcZFsBl6NWKiUjZGAYtrCF7aQQipAnP_MTIH3e2G-XLahAAc3Q9POjiJl--BfnlXMrAlRROSPruy9_lf5TlQ1JxDDaQVS-PHZEf_keDvNm3O25TDuX6kk3W-Ip79reyHm4pUayddLLWgz9YcatmKQwt2508VO0KkrgzQV6twGBVj0J6j3S7p_6Ttal4O2kYw1vkZsmResGucdUuSblrZbfxsY3-zPGg4H6f5b0LdSrnUfC-aXHqKJTkF44CrCD1AoU1XO8DhK5yM7SykOeWQVs7K4Rj5ncSraMTl5CZnmxVG4Tst7xUCIxgKfxIZTHzPt_93R0S4MH58v24Kmitmu2MkevO-wE33bwtTr0X4Sjl563ER-51fyA8W7IqfcJXD5k0odBT6vDgZDfq4od80Gws_-0xaSrkFXmCJsxBzFiRK2xsRaC6fATA_oJNE76eHHCz9uU5zTCjxvCSHL3WvCjMZxPeutp7Hz72xZi6YkLB9-TEUMGi3nIVVSOujBtWiKku0Pc3yUkX1jI9QTNEcSI_n_MUtzoSE2n_GVaWPQASccD3i41IQ=w825-h1125-s-no?authuser=0', actions:[{label: 'Viral Erasure Tool 1'}, {label: 'Viral Erasure Tool 2'}], selected: false, refreshed: true, charge:1},
   ]
@@ -236,7 +236,6 @@ function hideActionOptions(){
 // sendMessage() prints a message at the bottom of the screen, by changing the inner text of a <p> element called userMessage.
 function sendMessage(msg){
   document.getElementById('userMessage').innerText = msg;
-  console.log('beep boop');
 }
 
 // crewSize(num) shows or hides the character selection inputs based on the num. 
@@ -356,7 +355,7 @@ function startTheGame(charList, itemList, roomList){
     }
   }
   possibleActions('The game begins!');
-  activePlayer = -1;
+  activePlayer = katundianCrew.length-1;
   hideActionOptions(); 
   showGame();
   assignImages();
@@ -416,17 +415,30 @@ function possibleActions(msg){
   while (document.getElementById('actionSelector').options.length > 0){
     document.getElementById('actionSelector').options.remove(0);
   }
+  activeInfections(katundianCrew[activePlayer].infections);
   let actionList = [];
   actionList = [{label: "-select an action-"}, {label:'nap (end turn)'}, {label: 'peak'}, {label: 'paw'}, {label: 'scamper'}];
-  actionList.push(katundianCrew[activePlayer].charAction);
-  actionList.push(allRooms[katundianCrew[activePlayer].room].action);
-  for (x=0; x < katundianCrew[activePlayer].items.length; x++){
-    if (katundianCrew[activePlayer].items[x].refreshed){
-      actionList.push(katundianCrew[activePlayer].items[x].actions[0]);
-      if (katundianCrew[activePlayer].items[x].actions.length > 1) {
-        actionList.push(katundianCrew[activePlayer].items[x].actions[1]);
-      }
-    } 
+  if (!(infectionList[9])){
+    actionList.push(katundianCrew[activePlayer].charAction);
+  }
+  if (infectionList[5]){
+    actionList.splice(2,1);
+    if (katundianCrew[activePlayer].role==='scout'){
+      actionList.splice(3,1);
+    }
+  }
+  if (shipEnergy > 1 && !(damage[katundianCrew[activePlayer].room])){
+    actionList.push(allRooms[katundianCrew[activePlayer].room].action);
+  }
+  if (kluddefused) {
+    for (x=0; x < katundianCrew[activePlayer].items.length; x++){
+      if (katundianCrew[activePlayer].items[x].refreshed){
+        actionList.push(katundianCrew[activePlayer].items[x].actions[0]);
+        if (katundianCrew[activePlayer].items[x].actions.length > 1) {
+          actionList.push(katundianCrew[activePlayer].items[x].actions[1]);
+        }
+      } 
+    }
   }
   if (shipEnergy < 1){
     document.getElementById('userMessage').innerText = `${msg} \n \n Your ship ran out of energy. \n Game over, the kludde win.`;
@@ -447,7 +459,7 @@ function possibleActions(msg){
 // actionDescription(act) is called when the user selects an action from the "actionSelector". The name of that actions is passed into the function as "act" a switch is used with different cases for every possible action. The user is given instructions on how to finish that action. Any necessary controls for that action are set to style.display="block". All the unecessary controls get set to style.display="none" by the hideActionOptions() function.
 const roomConnection = [[[1,9],[5,7],[6,8]],[[0,9],[2,11],[6,10]],[[1,11],[3,13],[6,12]],[[2,13],[4,15],[6,14]],[[3,15],[5,17],[6,16]],[[0,7],[4,17],[6,18]],[[0,8],[1,10],[2,12],[3,14],[4,16],[5,18]]];
 function actionDescription(act){
-  const systemList = ['Grabby Paws', 'Dank Fusion Reactor', 'Sustinance Replicator', 'Nanite Nest', 'Power Core', 'Wellness Enforcer', 'Quantifoam Tank'];
+  const systemList = ['Grabby Paws', 'Wellness Enforcer', 'Quantifoam Tank', 'Dank Fusion Reactor', 'Nanite Nest', 'Sustinance Replicator', 'Power Core'];
   document.getElementById('messageImage').src = emptyImage;
   document.getElementById('confirmAction').style.display = 'inline'
   hideActionOptions();
@@ -570,9 +582,9 @@ function actionDescription(act){
       break;
     case "Dank Fusion Reactor":
       num = 0;
-      for (x=0;x<katundianCrew.length;x++){
-        for (y=0;y<katundianCrew[x].items.length; y++){
-          if (!katundianCrew[x].items[y].refreshed && katundianCrew[x].items[y].charge === 2){
+      for (z=0; z<katundianCrew.length; z++){
+        for (y=0;y<katundianCrew[z].items.length; y++){
+          if (!katundianCrew[z].items[y].refreshed && katundianCrew[z].items[y].charge === 2){
             num++;
           }
         }
@@ -617,7 +629,7 @@ function actionDescription(act){
       num = 0;
       for (z=0;z<katundianCrew.length;z++){
         for (y=0;y<katundianCrew[z].items.length; y++){
-          if (!katundianCrew[z].items[y].refreshed && katundianCrew[x].items[y].charge === 3){
+          if (!katundianCrew[z].items[y].refreshed && katundianCrew[z].items[y].charge === 3){
             num++;
           }
         }
@@ -662,14 +674,14 @@ function actionDescription(act){
       scanFor('Lashing Root', 'BFGG');
       break;
     case "BFGG 2":
-      scanFor('Lashing Root', 'BFGG');
+      scanFor('Shadow Seeder', 'BFGG');
       break;
     case "Battle Biscuits":
       num = 0;
       for (y=0; y<katundianCrew.length; y++){
         num += katundianCrew[y].stagger;
       }
-      document.getElementById('userMessage').innerText = `Battle Biscuits: Remove all stagger from all characters. /n Press confirm to remove ${num} stagger.`;
+      document.getElementById('userMessage').innerText = `Battle Biscuits: Remove all stagger from all characters. \n Press confirm to remove ${num} stagger.`;
       break;
     case "Dank Nugget 1":
       num = 0;
@@ -680,7 +692,7 @@ function actionDescription(act){
           }
         }
       }
-      document.getElementById('userMessage').innerText = `Dank Nugget: Refresh all dank matter items for all characters. /n Press confirm to refresh ${num} items.`;
+      document.getElementById('userMessage').innerText = `Dank Nugget: Refresh all dank matter items for all characters. \n Press confirm to refresh ${num} items.`;
       break;
     case "Dank Nugget 2":
       document.getElementById('userMessage').innerText = `Dank Nugget: Press confirm to gain 3 ship energy.`;
@@ -766,10 +778,11 @@ function actionDescription(act){
     case "KEM Spray 2":
       num = 0;
       for (y=0; y<katundianCrew.length; y++){
-        if (katundianCrew[y].room===katundianCrew[activPlayer].room){
+        if (katundianCrew[y].room===katundianCrew[activePlayer].room){
           num += katundianCrew[y].stagger;
         }
       }
+      document.getElementById('userMessage').innerText = `KEM Spray: remove all stagger from all characters in your room. \n Press confirm to remove ${num} stagger.`;
       break;
     case "Lumination Stick":
       for (y=0; y<6; y++){
@@ -788,7 +801,7 @@ function actionDescription(act){
           }
         }
       }
-      document.getElementById('userMessage').innerText = `Nanite Cluster: Refresh all nanite items for all characters. /n Press confirm to refresh ${num} items.`;
+      document.getElementById('userMessage').innerText = `Nanite Cluster: Refresh all nanite items for all characters. \n Press confirm to refresh ${num} items.`;
       break;
     case "Nanite Cluster 2":
       document.getElementById('userMessage').innerText = `Nanite Cluster: Press confirm to gain 3 ship energy.`;
@@ -832,7 +845,7 @@ function actionDescription(act){
           }
         }
       }
-      document.getElementById('userMessage').innerText = `Quantifoam Canister: Refresh all quantifoam items for all characters. /n Press confirm to refresh ${num} items.`;
+      document.getElementById('userMessage').innerText = `Quantifoam Canister: Refresh all quantifoam items for all characters. \n Press confirm to refresh ${num} items.`;
       break;
     case "Quantifoam Canister 2":
       sendMessage('Quantifoam Canister: Press confirm to gain 3 ship Energy.');
@@ -841,6 +854,7 @@ function actionDescription(act){
       scanFor('Kaboom Pod', 'Reboot Gloves');
       break;
     case "Reboot Gloves 2":
+      exhaustItem('Rebbot Gloves');
       while (document.getElementById('actionSelector').options.length > 0){
     document.getElementById('actionSelector').options.remove(0);
       }
@@ -851,11 +865,19 @@ function actionDescription(act){
         document.getElementById('actionSelector').appendChild(act);
       }
       var act = document.createElement('option');
-      act.value = 'Back';
-      act.innerHTML = 'Exit computer';
+      act.value = 'Gloves off';
+      act.innerHTML = 'Gloves off';
       document.getElementById('actionSelector').appendChild(act);
       document.getElementById('userMessage').innerText = 'Reboot Gloves: Activate any ship system. Repair that system first if it is damaged. \n Select a system then click confirm.'
       break;
+    case "Gloves off":
+      for (z=0; z<katundianCrew[activePlayer].items.length; z++){
+        if("Reboot Gloves"===katundianCrew[activePlayer].items[z].name){
+          katundianCrew[activePlayer].items[z].refreshed = true;
+        }
+     }
+     possibleActions('');
+     break;
     case "Temporal Loop":
       clickedKludde =[];
       document.getElementById('userMessage').innerText = `Temporal Loop: Defeat any 1 revealed kludde. \n click on a kludde then click Confirm.`;
@@ -920,6 +942,10 @@ function takeAction(act){
         document.getElementById('messageImage').src = itemDeck[0].picture;
         itemDeck.shift();
         acted = true;
+        if(infectionList[4]){
+          katundianCrew[activePlayer].stagger++;
+          msg += `\n The ${katundianCrew[activePlayer].role}'s paws tremble. They look frazzled.`;
+        }
       } else{
         document.getElementById('userMessage').innerText = 'There are no items to draw. Choose a different action.';
       }
@@ -937,6 +963,10 @@ function takeAction(act){
           katundianCrew[activePlayer].room = z;
           characterPosition(activePlayer);
           acted = true;
+          if (infectionList[6]){
+            katundianCrew[activePlayer].stagger++;
+            msg += `\n The ${katundianCrew[activePlayer].role} wobbles unsteadily like they are intoxicated`;
+          }
         }
       }
       if (!acted){document.getElementById('userMessage').innerText = 'Select a room to move to, before you click confirm.'}
@@ -996,12 +1026,13 @@ function takeAction(act){
     case "Treat":
       for (z=0;z<katundianCrew.length;z++){
         if (katundianCrew[z].room === katundianCrew[activePlayer].room && katundianCrew[z].infections.length>0){
+          num += katundianCrew[z].infections.length;
           kluddeFleet -= katundianCrew[z].infections.length;
           katundianCrew[z].infections = [];
           acted = true;
         }
       }
-      acted ? msg = `The medic treats the ${num} infections.`: document.getElementById('userMessage').innerText = 'No one in your room is infected. Chose a different action.';  
+      acted ? msg = `The medic treats ${num} infections.`: document.getElementById('userMessage').innerText = 'No one in your room is infected. Chose a different action.';  
       break;
     case 'Spot':
       for (z=0; z<6; z++){
@@ -1022,6 +1053,10 @@ function takeAction(act){
           katundianCrew[activePlayer].room = z;
           characterPosition(activePlayer);
           acted = true;
+          if (infectionList[6]){
+            katundianCrew[activePlayer].stagger++;
+            msg += `\n The teleporter wobbles unsteadily like they are intoxicated`;
+          }
         }
       }
       if (!acted){document.getElementById('userMessage').innerText = 'Select a room to move to, before you click confirm.'}
@@ -1033,8 +1068,13 @@ function takeAction(act){
         removeKluddeIcon(clickedKludde[0],clickedKludde[1],clickedKludde[2]);
         shipEnergy--;
         acted = true;
+        repairDamage(0);
+        if (infectionList[7]) {
+          takeDamage(0);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
-        document.getElementById('userMessage').innerText = 'Click on a kludde to defeat, before you click confirm.';
+        document.getElementById('userMessage').innerText = 'Click on a revealed kludde to defeat, before you click confirm.';
       }
       break;
     case "Dank Fusion Reactor":
@@ -1049,8 +1089,13 @@ function takeAction(act){
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the dank fusion reactor. \n ${num} items have been refreshed.`;
+        repairDamage(3);
+        msg = `The ${katundianCrew[activePlayer].role} activates the dank fusion reactor to refresh ${num} items.`;
         shipEnergy--;
+        if (infectionList[7]) {
+          takeDamage(3);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
         document.getElementById('userMessage').innerText='There are no dank matter that need to be refreshed. \n Choose a different action.';
         }
@@ -1065,8 +1110,13 @@ function takeAction(act){
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the sustinance replicator \n ${num} stagger has been removed.`;
+        msg = `The ${katundianCrew[activePlayer].role} activates the sustinance replicator to remove ${num} stagger.`;
         shipEnergy--;
+        repairDamage(5);
+        if (infectionList[7]) {
+          takeDamage(5);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
          document.getElementById('userMessage').innerText='Nobody is hungry. \n Choose a different action.';
       }
@@ -1083,14 +1133,19 @@ function takeAction(act){
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the nanite nest. \n ${num} items have been refreshed.`;
+        repairDamage(4);
+        msg = `The ${katundianCrew[activePlayer].role} activates the nanite nest to refresh ${num} items.`;
         shipEnergy--;
+        if (infectionList[7]) {
+          takeDamage(4);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
         document.getElementById('userMessage').innerText='There are no nanite items that need to be refreshed. \n Choose a different action.';
         }
       break;
     case "Power Core":
-      num
+      num = 0;
       for (z=0; z<7; z++){
         if (damage[z]){
           repairDamage(z);
@@ -1099,8 +1154,12 @@ function takeAction(act){
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the power core. \n ${num} systems have been repaired.`;
+        msg = `The ${katundianCrew[activePlayer].role} activates the power core to repair ${num} systems.`;
         shipEnergy--;
+        if (infectionList[7]) {
+          takeDamage(6);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
         document.getElementById('userMessage').innerText='There are no quanitifoam items that need to be refreshed. \n Choose a different action.';
       }
@@ -1115,9 +1174,14 @@ function takeAction(act){
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the wellness enforcer \n ${num} infections have been treated.`;
+        repairDamage(1);
+        msg = `The ${katundianCrew[activePlayer].role} activates the wellness enforcer to treat ${num} infections.`;
         kluddeFleet -= num;
         shipEnergy--;
+        if (infectionList[7]) {
+          takeDamage(1);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
          document.getElementById('userMessage').innerText='Nobody is infected. \n Choose a different action.';
       }
@@ -1130,21 +1194,35 @@ function takeAction(act){
             katundianCrew[z].items[y].refreshed = true;
             acted = true;
             num++;
+            repairDamage(2);
           }
         }
       }
       if(acted){
-        msg = `The ${katundianCrew[activePlayer].role} activates the quatifoam tank. \n ${num} items have been refreshed.`;
+        msg = `The ${katundianCrew[activePlayer].role} activates the quatifoam tank to refresh ${num} items.`;
         shipEnergy--;
+        if (infectionList[7]) {
+          takeDamage(2);
+          msg += `\n They push the button angrily and break it.`;
+        }
       } else {
         document.getElementById('userMessage').innerText='There are no quanitifoam items that need to be refreshed. \n Choose a different action.';
         }
       break;
     case "Kludde attack":
+      num = -1;
       for (z=0;z<katundianCrew.length;z++){
-        if (katundianCrew[z].room===targetRoom){katundianCrew[z].stagger++}
+        if (katundianCrew[z].room===targetRoom){
+          katundianCrew[z].stagger++
+          activeInfections(katundianCrew[z].infections);
+          if (infectionList[12]) {
+            katundianCrew[z].stagger++
+            num = z;
+          }
+        }
       }
-      msg = `The Kludde attack ${allRooms[targetRoom].room}!`
+      msg = `The Kludde attack the ${allRooms[targetRoom].room}!`
+      if (num>=0) {msg += `\n The ${katundianCrew[num].role} feels overwhelmed.`}
       attackDamage(allRooms[targetRoom].kludde.length+1);
       drawKluddeCard(targetRoom);
       nextPlayerTurn(msg)
@@ -1173,6 +1251,7 @@ function takeAction(act){
       kluddeFleet -= num[1];
       if(acted){
         exhaustItem('Alkashitzer');
+        msg = `The ${katundianCrew[activePlayer].role} uses Alkashitzer. ${num[0]} stagger and ${num[1]} infections are removed`;
       } else {
         document.getElementById('userMessage').innerText = "Nobody needs Alkashitzer yet. \n choose a different action.";
       } 
@@ -1206,7 +1285,7 @@ function takeAction(act){
       [acted, msg] = defeatKludde('Lashing Root', katundianCrew[activePlayer].room, 'BFGG');
       break;
     case "BFGG 2":
-      [acted, msg] = defeatKludde('Lashing Root', katundianCrew[activePlayer].room, 'BFGG');
+      [acted, msg] = defeatKludde('Shadow Seeder', katundianCrew[activePlayer].room, 'BFGG');
       break;
     case "Battle Biscuits":
       num = 0;
@@ -1252,10 +1331,11 @@ function takeAction(act){
     case "Dimensional Scanner 2":
       num = 0;
       msg = `The ${katundianCrew[activePlayer].role} uses the Dimensional Scanner.`
-      for (z=0; z<allRooms[katundianCrew[activePlayer].room].kludde.length; z++){
+      for (z=allRooms[katundianCrew[activePlayer].room].kludde.length-1; z>=0; z--){
         if (!(allRooms[katundianCrew[activePlayer].room].kludde[z].revealed)){
           msg += '\n'
-          msg += revealAKludde(allRooms[katundianCrew[activePlayer].room].kludde[z], katundianCrew[activePlayer.room], z);
+          msg += revealAKludde(allRooms[katundianCrew[activePlayer].room].kludde[z], katundianCrew[activePlayer].room, z);
+          num++;
         }
       }
       if (num>0){
@@ -1263,7 +1343,7 @@ function takeAction(act){
         exhaustItem('Dimensional Scanner');
         msg += `\n ${num} kludde were revealed.`
       } else {
-        document.getElementById('userMessage') = `There are no hidden kludde attacking the ${allRooms[katundianCrew[activePlayer].room].room} \n Choose a different actions.`
+        document.getElementById('userMessage').innerText = `There are no hidden kludde attacking the ${allRooms[katundianCrew[activePlayer].room].room} \n Choose a different actions.`
       }
       break;
     case "Eye Drone 1":
@@ -1273,16 +1353,19 @@ function takeAction(act){
       num = 0;
       for (z=0; z<6; z++){
         if (document.getElementById(`spaceZone${z}`).checked){
-          for (y=0; y<allRooms[z].kludde.length; y++){
+          acted = true;
+          exhaustItem('Eye Drone');
+          msg = `The ${katundianCrew[activePlayer].role} uses the Eye Drone.`;
+          for (y=allRooms[z].kludde.length-1; y>=0; y--){
             if (!(allRooms[z].kludde[y].revealed) && num < 2){
-              revealAKludde(allRooms[z].kludde[y], z, y);
+              msg += '\n';
+              msg += revealAKludde(allRooms[z].kludde[y], z, y);
+              num++;
             }
           }
         }
       }
-      acted = true;
-      exhaustItem('Eye Drone');
-      msg = `The ${katundianCrew[activePlayer].role} uses the Eye Drone to reveal ${num} hidden kludde.`;
+      acted ? msg = `${num} kludde are revealed.` : sendMessage('Select a space zone, before you click confirm.');
       break;
     case "Fixit Grenade":
       num = 0;
@@ -1329,7 +1412,7 @@ function takeAction(act){
       }
       if (num[0]===katundianCrew[activePlayer].room){
         if (num[1]>0) {
-          msg = `The ${katundianCrew[activePlayer].role} uses handi boots to repair ${num} damage.`;
+          msg = `The ${katundianCrew[activePlayer].role} uses handi boots to repair ${num[1]} damage.`;
           exhaustItem('Handi Boots');
         } else {
           acted = false;
@@ -1341,6 +1424,10 @@ function takeAction(act){
           exhaustItem('Handi Boots');
         } else {
           msg = `The ${katundianCrew[activePlayer].role} tries to use the handi boots. \n There is no damage to repair, so they scamper to the ${allRooms[katundianCrew[activePlayer].room].room} instead.`;
+        }
+        if (infectionList[6]){
+          katundianCrew[activePlayer].stagger++;
+          msg += `\n The ${katundianCrew[activePlayer].role} wobbles unsteadily like they are intoxicated`;
         }
       } 
       break;
@@ -1367,7 +1454,7 @@ function takeAction(act){
           repairDamage(y);
         }
       }
-      msg = `The ${katundianCrew[activePlayer].role} uses the hypersonic wrench to repair ${num} damage;`
+      msg = `The ${katundianCrew[activePlayer].role} uses the hypersonic wrench to repair ${num} damage`;
       exhaustItem('Hypersonic Wrench');
       acted = true;
       break;
@@ -1397,7 +1484,7 @@ function takeAction(act){
       break;
     case "KEM Spray 2":
       num = 0;
-      for (z=0;z<katundianCrew.length;z++){
+      for (z=0; z<katundianCrew.length; z++){
         if (katundianCrew[z].room === katundianCrew[activePlayer].room && katundianCrew[z].stagger>0){
           num += katundianCrew[z].stagger;
           katundianCrew[z].stagger = 0;
@@ -1405,22 +1492,29 @@ function takeAction(act){
         }
       }
       if (acted){
+        exhaustItem('KEM Spray');
         msg = `The ${katundianCrew[activePlayer].role} uses KEM Spray. \n ${num} stagger is removed.`;
       } else{
         document.getElementById('userMessage').innerText = 'No one in your room is hungry. Chose a different action.';
         }  
       break;
     case "Lumination Stick":
+      num = 0;
       for (z=0; z<6; z++){
-        if (document.getElementById(`SpaceZone${z}`).checked){
+        if (document.getElementById(`spaceZone${z}`).checked){
+          msg = `The ${katundianCrew[activePlayer].role} uses the Lumination Stick.`
           acted = true;
-          for (y=0; y<allRooms[z].kludde.length; y++){
+          exhaustItem('Lumination Stick');
+          for (y=allRooms[z].kludde.length-1; y>=0; y--){
             if(!(allRooms[z].kludde[y].revealed)){
-              revealAKludde(allRooms[z].kludde[y], z, y);
+              msg += '\n';
+              msg += revealAKludde(allRooms[z].kludde[y], z, y);
+              num++;
             }
           }
         }
       }
+      acted ? msg += `\n ${num} kludde are revealed.` : sendMessage('Select a space zone, before you click confirm.');
       break;
     case "Nanite Cluster 1":
       num = 0;
@@ -1444,6 +1538,7 @@ function takeAction(act){
       shipEnergy += 3;
       acted = true;
       msg = `The ${katundianCrew[activePlayer].role} uses the Nanite Cluster to add 3 energy to the ship.`;
+      exhaustItem('Nanite Cluster');
       break;
     case "NIP":
       actionsRemaining += 3;
@@ -1458,7 +1553,7 @@ function takeAction(act){
       msg = `The ${katundianCrew[activePlayer].role} uses the Photon Emitter`;
       num = [0, [], 0];
       num[1] = JSON.parse(JSON.stringify(katundianCrew[activePlayer].infections));
-      for (z=0; z<allRooms[katundianCrew[activePlayer].room].kludde.length; z++){
+      for (z=allRooms[katundianCrew[activePlayer].room].kludde.length-1; z>=0; z--){
         if (!(allRooms[katundianCrew[activePlayer].room].kludde[z].revealed) && num[0] < 2){
           msg += '\n';
           msg += revealAKludde(allRooms[katundianCrew[activePlayer].room].kludde[z], katundianCrew[activePlayer].room, z);
@@ -1486,6 +1581,10 @@ function takeAction(act){
           characterPosition(activePlayer);
           acted = true;
           msg = `The ${katundianCrew[activePlayer].role} uses the Pounce Suit to move to the ${allRooms[katundianCrew[activePlayer].room].room}.`
+          if (infectionList[6]){
+            katundianCrew[activePlayer].stagger++;
+            msg += `\n The ${katundianCrew[activePlayer].role} wobbles unsteadily like they are intoxicated`;
+          }
         }
       }
       break;
@@ -1494,7 +1593,9 @@ function takeAction(act){
       break;
     case "Power Suit 2":
       actionsRemaining +=2;
-      msg = `The ${katundianCrew[activePlayer].role} uses the Power Suit to move to gain 2 extra actions.`
+      acted = true;
+      msg = `The ${katundianCrew[activePlayer].role} uses the Power Suit to move to gain 2 extra actions.`;
+      exhaustItem('Power Suit');
       break;
     case "Quantifoam Canister 1":
       num = 0;
@@ -1518,6 +1619,7 @@ function takeAction(act){
       shipEnergy += 3;
       acted = true;
       msg = `The ${katundianCrew[activePlayer].role} uses the Quantifoam Canister to add 3 energy to the ship.`;
+      exhaustItem('Quantifoam Canister');
       break;
     case "Reboot Gloves 1":
       [acted, msg] = defeatKludde('Kaboom Pod', katundianCrew[activePlayer].room, 'Reboot Gloves');
@@ -1536,11 +1638,13 @@ function takeAction(act){
       }
       break;
     case "Viral Erasure Tool 1":
-      [acted, msg] = defeatKludde('Green Matter Blob', katundianCrew[activePlayer].room, 'Power Suit');
+      [acted, msg] = defeatKludde('Green Matter Blob', katundianCrew[activePlayer].room, 'Viral Erasure Tool');
       break;
     case "Viral Erasure Tool 2":
+    num = 0;
       for (z=0;z<katundianCrew.length;z++){
         if (katundianCrew[z].room === katundianCrew[activePlayer].room && katundianCrew[z].infections.length>0){
+          num += katundianCrew[z].infections.length;
           kluddeFleet -= katundianCrew[z].infections.length;
           katundianCrew[z].infections = [];
           acted = true;
@@ -1548,10 +1652,14 @@ function takeAction(act){
       }
       if (acted){
         msg = `The ${katundianCrew[activePlayer].role} uses the Viral Erasure tool to treats ${num} infections.`
-        exhaustItem('Viral Erasure Tool')
+        exhaustItem('Viral Erasure Tool');
       } else {
         sendMessage ('No one in your room is infected. \n Chose a different action.');
       }
+      break;
+    case "new game":
+      resetTheGame();
+      showSelect();
       break;
   }
   document.getElementById('confirmAction').style.display = 'inline';
@@ -1576,17 +1684,59 @@ function takeAction(act){
 }
 
 function nextPlayerTurn(msg){
+  let bool = true;
+  kluddefused = true;
+  activeInfections(katundianCrew[activePlayer].infections);
+  if (infectionList[3]){
+    for (y=0; y<katundianCrew.length; y++){
+      if (!(y===activePlayer) && katundianCrew[activePlayer].room===katundianCrew[y].room) {
+        katundianCrew[y].stagger++;
+        msg += `\n The ${katundianCrew[y].role} chokes and coughs as spores waft from the ${katundianCrew[activePlayer].role}.`
+      }
+    }
+  }
+  if (infectionList[13] && actionsRemaining < 1){
+    katundianCrew[activePlayer].stagger++;
+    msg += `\n The ${katundianCrew[y].role} is turning green.`;
+  }
   activePlayer++;
   if (activePlayer >= katundianCrew.length){
     activePlayer = 0;
   }
   document.getElementById('messageImage').src = emptyImage;
+  activeInfections(katundianCrew[activePlayer].infections);
+  if (infectionList[0]){
+    bool = true;
+    for (z=0; z<damageMatrix[katundianCrew[activePlayer].room].length; z++){
+      if (bool && !(damage[damageMatrix[katundianCrew[activePlayer].room][z]])){
+        takeDamage(damageMatrix[katundianCrew[activePlayer].room][z]);
+        bool = false;
+        msg += `\n The ${katundianCrew[activePlayer].role} damage the ${allrooms[katundianCrew[activePlayer].room].room} in a fit of Bio Rage.`;
+      }
+    }
+  }
+  if (infectionList[2]) {
+    bool = true;
+    for (y=0; y<katundianCrew.length; y++){
+      if (bool && !(y===activePlayer) && katundianCrew[activePlayer].room===katundianCrew[y].room) {
+        katundianCrew[activePlayer].stagger++;
+        bool = false;
+        msg += `\n The ${katundianCrew[activePlayer].role} shakes with BTD Visions and stares suspiciously at the ${katundianCrew[y].role}`
+      }
+    }
+  }
   if (katundianCrew[activePlayer].stagger < 3){
-    actionsRemaining = 3;
-    possibleActions(msg)
+    if (katundianCrew[activePlayer].stagger>1 && infectionList[14]){
+      katundianCrew[activePlayer].stagger = 0;
+      msg += `\n The ${katundianCrew[activePlayer].role} is suffering from whiplash, and completely staggered.`
+      kluddeAttack(msg);
+    } else {
+      actionsRemaining = 3;
+      possibleActions(msg)
+    }
   } else {
     katundianCrew[activePlayer].stagger = 0;
-    msg = msg + `\n The ${katundianCrew[activePlayer].role} is completely staggered.`
+    msg += `\n The ${katundianCrew[activePlayer].role} is completely staggered.`
     kluddeAttack(msg);
   }
 }
@@ -1597,7 +1747,7 @@ function kluddeAttack(msg){
   while (document.getElementById('actionSelector').options.length > 0){
     document.getElementById('actionSelector').options.remove(0);
   }
-  document.getElementById('userMessage').innerText = `${msg} \n The kludde are attacking ${allRooms[targetRoom].room}! \n Each character in the ${allRooms[targetRoom].room} will take 1 stagger. \n The ship will take 1 damage for each attacking kludde. \n Press confirm to continue.`
+  document.getElementById('userMessage').innerText = `${msg} \n The kludde are attacking the ${allRooms[targetRoom].room}! \n Each character in the ${allRooms[targetRoom].room} will take 1 stagger. \n The ship will take 1 damage for each attacking kludde. \n Press confirm to continue.`
   document.getElementById('shipNumber').innerText = shipEnergy;
   document.getElementById('kluddeNumber').innerText = kluddeFleet;
   document.getElementById('confirmAction').style.display = 'inline';
@@ -1646,20 +1796,24 @@ function drawKluddeCard(z){
 }
 
 // revealAKludde(kld) takes a hidden kludde and reveals it. kld is a specific kludde inside allRooms[z].kludde. 
-function revealAKludde(kld, rmNum, z){
+function revealAKludde(kld, rmNum, ndx){
   switch (kld.type){
     case ('defeatable'):
       kld.revealed = true;
       document.getElementById(`${rmNum}${kld.name}${kld.clockwise}`).src = kld.icon;
-      msg = `you reveal a ${kld.name} outside the ${allRooms[rmNum].room}.`;
+      msg = `The ${katundianCrew[activePlayer].role} reveals a ${kld.name} outside the ${allRooms[rmNum].room}.`;
       break;
     case ('infection'):
       katundianCrew[activePlayer].infections.push(kld);
       msg = `The ${katundianCrew[activePlayer].role} reveals a cloud of infectious spores. \n The ${katundianCrew[activePlayer].role} is infected with ${kld.name}.`;
-      removeKluddeIcon(kld, rmNum, z);
+      removeKluddeIcon(kld, rmNum, ndx);
+      if (infectionList[7]) {
+        katundianCrew[activePlayer].stagger += 3;
+        msg += `\n The ${katundianCrew[activePlayer].role} collapses from kludde poisoning.`
+      }
       break;
     case('event'):
-      switch(allRooms[rmNum].kludde[z].name){
+      switch(allRooms[rmNum].kludde[ndx].name){
         case('Glare'):
           msg = `The ${katundianCrew[activePlayer].role} reveals a glare. \n The kludde mothership looks away akwardly when they lock eyes.`;
           break;
@@ -1677,8 +1831,12 @@ function revealAKludde(kld, rmNum, z){
           msg = `The ${katundianCrew[activePlayer].role} reveals spicy air. \n The ${katundianCrew[activePlayer].role} is staggered.`;
           break;
       }
-      removeKluddeIcon(kld, rmNum, z);
+      removeKluddeIcon(kld, rmNum, ndx);
       break;
+  }
+  if (infectionList[1]) {
+    katundianCrew[activePlayer].stagger++;
+    msg += `\n The ${katundianCrew[activePlayer].role}'s knees go weak with Botonophobia.`
   }
   return(msg);
 }
@@ -1716,6 +1874,10 @@ function defeatKludde(kldName, rmNum, itmName){
       removeKluddeIcon(allRooms[rmNum].kludde[z], rmNum, z);
       msg = `The ${katundianCrew[activePlayer].role} uses the ${itmName} to defeat a ${kldName}.`
       exhaustItem(itmName);
+      if (infectionList[10]){
+        katundianCrew[activePlayer].stagger++
+        msg += `\n The ${katundianCrew[activePlayer].role} writhes in pain when they harm a kludde.`;
+      }
       return [true, msg];
     }
   }
@@ -1724,19 +1886,21 @@ function defeatKludde(kldName, rmNum, itmName){
 }
 
 // removeKluddeIcon removes the kludde images from the space zone and removes the kludde from the allRooms[rmNum].kludde. This is separate from the defeatKludde function because certain kludde icons can be removed without defeating the kludde.
-function removeKluddeIcon(kld, rmNum, z){
-  allRooms[rmNum].kludde.splice(z,1);
+function removeKluddeIcon(kld, rmNum, ndx){
+  allRooms[rmNum].kludde.splice(ndx,1);
   document.getElementById(`${rmNum}${kld.name}${kld.clockwise}`).remove();
-  for (y=0;y<allRooms[rmNum].kludde.length;y++){
-    document.getElementById(`${rmNum}${allRooms[rmNum].kludde[y].name}${allRooms[rmNum].kludde[y].clockwise}`).style.left = `${spacePositions[rmNum][y][0]}px`;
-    document.getElementById(`${rmNum}${allRooms[rmNum].kludde[y].name}${allRooms[rmNum].kludde[y].clockwise}`).style.top = `${spacePositions[rmNum][y][1]}px`;
+  for (a=0; a<allRooms[rmNum].kludde.length; a++){
+    document.getElementById(`${rmNum}${allRooms[rmNum].kludde[a].name}${allRooms[rmNum].kludde[a].clockwise}`).style.left = `${spacePositions[rmNum][a][0]}px`;
+    document.getElementById(`${rmNum}${allRooms[rmNum].kludde[a].name}${allRooms[rmNum].kludde[a].clockwise}`).style.top = `${spacePositions[rmNum][a][1]}px`;
   }
+  document.getElementById(`kluddeAmount${rmNum}`).innerText = allRooms[rmNum].kludde.length;
 }
 
 // 'damageMatrix' is an array of rooms where each room has 4 posible 'damage' index's. 'damage' is an array of boolean values which indicates whether each system or door of the ship is damaged. damage[0] is the 'Grabby Paws'. damage[7] through damage[9] are the doors leading out of the bridge. damageMatrix[0] represents the Bridge, hence [0,7,8,9]
 const damageMatrix = [[0,7,8,9], [1,9,10,11], [2,11,12,13], [3,13,14,15], [4,15,16,17], [5,17,18,7], [6,8,10,12,14,16,18]];
 function attackDamage(num){
   let rand = Math.floor(Math.random() *3);
+  rand = Math.floor(Math.random() *3);
   let spotsLeft = 4;
   spotsLeft = 4;
   for (z=0;z<4;z++){
@@ -1744,7 +1908,7 @@ function attackDamage(num){
   }
   if (num < spotsLeft){
     while (num > 0) {
-      if (rand>=4){rand=0};
+      if (rand>=4) {rand=0};
       if(damage[damageMatrix[targetRoom][rand]]){
         rand++;
       } else{
@@ -1763,22 +1927,24 @@ function attackDamage(num){
 }
 
 // takeDamage(x) puts damage onto the ship, first by setting damage[x] = true, then by displaying the damagePicture. repairDamage(x) removes damage from the ship, by doing the inverse.
-function takeDamage(x){
-  damage[x] = true;
-  document.getElementById(`damagePicture${x}`).style.display = 'block';
+function takeDamage(ndx){
+  damage[ndx] = true;
+  document.getElementById(`damagePicture${ndx}`).style.display = 'block';
 }
-function repairDamage(x){
-  damage[x] = false;
-  document.getElementById(`damagePicture${x}`).style.display = 'none';
+function repairDamage(ndx){
+  damage[ndx] = false;
+  document.getElementById(`damagePicture${ndx}`).style.display = 'none';
 }
 
 //exhaustItem(itmName) exhausts a specific item, by setting .refreshed to false
+let kluddefused = true;
 function exhaustItem(itmName) {
-  for (z=0; z<katundianCrew[activePlayer].items.length; z++){
-    if(itmName===katundianCrew[activePlayer].items[z].name){
-      katundianCrew[activePlayer].items[z].refreshed = false;
+  for (b=0; b<katundianCrew[activePlayer].items.length; b++){
+    if(itmName===katundianCrew[activePlayer].items[b].name){
+      katundianCrew[activePlayer].items[b].refreshed = false;
     }
   }
+  if (infectionList[11]) {kluddefused = false;}
 }
 
 function scanFor(kldName, itmName){
@@ -1796,5 +1962,60 @@ function scanFor(kldName, itmName){
     if (itmName === katundianCrew[activePlayer].items[y].name){
       document.getElementById('messageImage').src = katundianCrew[activePlayer].items[y].picture;
     }
+  }
+}
+
+let infectionList = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+function activeInfections(infs) {
+  infectionList = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+  for (c=0; c<infs.length; c++){
+    switch(infs[c].name){
+      case 'Bio Rage':
+        infectionList[0] = true;
+        break;
+      case 'Botanophobia':
+        infectionList[1] = true;
+        break;
+      case 'BTD Visions':
+        infectionList[2] = true;
+        break;
+      case 'Crop Duster':
+        infectionList[3] = true;
+        break;
+      case 'Frazzled':
+        infectionList[4] = true;
+        break;
+      case 'Fung Eye':
+        infectionList[5] = true;
+        break;
+      case 'Intoxicated':
+        infectionList[6] = true;
+        break;
+      case 'Destruction':
+        infectionList[7] = true;
+        break;
+      case 'Kludde Poisoning':
+        infectionList[8] = true;
+        break;
+      case 'Kludde Sensitivity':
+        infectionList[9] = true;
+        break;
+      case 'Kludde Vengence':
+        infectionList[10] = true;
+        break;
+      case 'Kluddefused':
+        infectionList[11] = true;
+        break;
+      case 'Overwhelmed':
+        infectionList[12] = true;
+        break;
+      case 'Turning Green':
+        infectionList[13] = true;
+        break;
+      case 'Whiplash':
+        infectionList[14] = true;
+        break;
+    }
+  if (!(infectionList[11])) {kluddefused = true;}
   }
 }
