@@ -1780,7 +1780,7 @@ function drawKluddeCard(z){
   allRooms[z].kludde.push(kluddeDeck[0]);
   document.getElementById(`kluddeAmount${z}`).innerText = allRooms[z].kludde.length;
   var kld = document.createElement('img');
-  kld.src ='https://lh3.googleusercontent.com/YjB2-2WPmvtEfTs6IXKDGHNQzFYpw7Eas5WEgghq96_OeH00JiM5dSVBu2nQ1zz-ALz_AqlipeFbZLlQJNgfkzWG2GsvBXFi4-LwHORc2kxFtwvyb2EwQcIOA5mEd5DA4c2SbRxZtDSW7OhBucS7MuaBehfAL35G4UNZ08y-RxeUuHbuKigh9_2v3clmbp4wI3dk81-_7n1IkKJPduRqKycvpugnPyaYHp5sClyzsP5q6bbzfJt67jJwkwxMC8_85Hx43MpH4eGuCIvFLMd206ceDV-if7vXUtjjawR2z0YPNV0B3sdz-v8pOUvRAdFaBfyrHF14ZJJ1Tu_tC-RMVm3GXYQRN7nKe1fWnF5VPmGP2974JeUrW5tnbMmUTceyVqHnHxflJyJdfnlcEZk5DamZrUV29eL3FJlSc1T_2OrUB4vFL0xa2ttHMxlYqiC2ov1Bt6RNJ9eELM5oDTKPrNYWHfcI4Z-LT-tU2CKfS4bpkFNjsAGTtq4BmvGMJELxQqpSISkJ4ua870FU9HduscEMygLLF4jnI9XrSqCLeATLOPRkf2MYLlQPYyRqnta8NByd-qHmJ8wVc-6S5MUPOZ6KEgg_EmKh1EETFzJ3Fq5QGhP56nWPIo7sXlG9iWmZnrUG43C-aIScJJnycUObFEWYHrENOWW90kbOHmSEF1IXshtHptPFqwk-duiJTL0TWOstBMNEeL4PYngx1Lk8bpuD6U_EEzMjFCuoAw3QKcCqUKG2Oyy4GRbAQfb9RyYaYNuA9BGYb3CKhncOlQL27QnTMlek07ryDxLaylxz1oWjgr07h5weNPldXg_0rlUVB7GC7iTcSM7BhlnPt14Z46XIyNgwp2JgEPfq3QwP0reZgj2bOMMVfN1w1tmPIJ4qU_gYj34QACe1Wa6g_K_3MbnPp9k64PhuxsxVzniTr72GWQN6=w100-h100-s-no?authuser=0';
+  kld.src ='Unrevealed.png';
   kld.style.position = 'absolute';
   kld.style.left =`${spacePositions[z][allRooms[z].kludde.length-1][0]}px`
   kld.style.top =`${spacePositions[z][allRooms[z].kludde.length-1][1]}px`
