@@ -8,7 +8,7 @@ body {
 
 /* information section shows an image and text to tell the player what's happening or what to do. Right now a LOT of code updates the "userMessage" and "messageImage". Some of it should go to a "gameLog" instead, but I haven't made the gameLog yet */
 #information {
-  position: abolute;
+  position: absolute;
   left: 1050px;
   top: 50px;
   border: 3px solid white;
