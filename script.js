@@ -180,7 +180,7 @@ const emptyImage = 'Blank.png';
 
 // systemDamage and doorDamage point to images which show the damage the katundian ship has taken. 
 const systemDamage = 'SystemDamage.png';
-const doorDamage = 'RoomDamage.png'; 
+const doorDamage = 'DoorDamage.png'; 
 
 // show functions are used to display different sections of html to the user: main menu, load screen, start selection screen, or the game itself. 
 function showMainMenu (){
