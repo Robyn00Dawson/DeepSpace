@@ -1854,7 +1854,7 @@ function kluddeDescription(kldID){
     if (kldName===allRooms[rmNum].kludde[z].name && kldClock===allRooms[rmNum].kludde[z].clockwise){
       if(allRooms[rmNum].kludde[z].revealed){
         document.getElementById('userMessage').innerText = `You clicked on a ${allRooms[rmNum].kludde[z].name} that is attacking the ${allRooms[rmNum].room}.`
-        document.getElementById('userMessage').src = allRooms[rmNum].kludde[z].picture;
+        document.getElementById('messageImage').src = allRooms[rmNum].kludde[z].picture;
       clickedKludde[0] = allRooms[rmNum].kludde[z];
       clickedKludde[1] = rmNum;
       clickedKludde[2] = z;
