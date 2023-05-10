@@ -6,6 +6,10 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
+  <section id='information'>
+    <img id='messageImage' src ='Blank.png' width='330' height='450'>
+    <p id='userMessage'></p>
+  </section>
   <section id='mainMenu'>
     <h1>Deep Space</h1>
     <p>Deep space is a cooperative board game for up to 7 players. This version is single player or hot seat only. When it is finished I will look into online multiplayer.</p>
@@ -482,16 +486,7 @@
     <p> Ship Energy: <span id='shipNumber'>20</span></p>
     <select name="character1" id="actionSelector" onchange='actionDescription(value);'></select>
     <span>~~~</span>
-    <input type="submit" id="confirmAction" value="Confirm" onclick="takeAction(actionSelector.value);">
-    
-  </section>
-
-  
-  <hr>
-  <br>
-  <section id='information'>
-    <img id='messageImage' src ='Blank.png' width='330' height='450'>
-    <p id='userMessage'></p>
+    <input type="submit" id="confirmAction" value="Confirm" onclick="takeAction(actionSelector.value);">  
   </section>
   <script src="script.js"></script>
 </body>
