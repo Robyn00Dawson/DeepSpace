@@ -137,7 +137,7 @@ function resetTheGame(){
     {name: 'BTD Visions', fleet: 1, clockwise:3, type: 'infection', picture: 'BTD Visions.png', revealed: false},
     {name: 'Crop Duster', fleet: 1, clockwise:4, type: 'infection', picture: 'Crop Duster.png', revealed: false},
     {name: 'Frazzled', fleet: 1, clockwise:5, type: 'infection', picture: 'Frazzled.png', revealed: false},
-    {name: 'Fung Eye', fleet: 1, clockwise:1, type: 'infection', picture: 'Fung Eye.png', revealed: false},
+    {name: 'Fung Eye', fleet: 1, clockwise:1, type: 'infection', picture: 'Fungeye.png', revealed: false},
     {name: 'Intoxicated', fleet: 1, clockwise:2, type: 'infection', picture: 'Intoxicated.png', revealed: false},
     {name: 'Destruction', fleet: 1, clockwise:3, type: 'infection', picture: 'Destruction.png', revealed: false},
     {name: 'Kludde Poisoning', fleet: 1, clockwise:4, type: 'infection', picture: 'Kludde Poisoning.png', revealed: false},
