@@ -6,6 +6,28 @@ body {
   z-index: 0;
 }
 
+/* */
+#inventoryDisplay {
+  position: absolute;
+  left: 1500px;
+  top: 100px;
+  height: 800px;
+  width: 600px;
+  background-color: gray;
+  border: 3px solid white
+}
+
+#itemScrollbox {
+  position: absolute;
+  left: 160px;
+  top: 40px;
+  height: 720px;
+  width: 430px;
+  overflow: auto;
+  background-color: gray;
+  border: 2px solid black;
+}
+
 /* information section shows an image and text to tell the player what's happening or what to do. Right now a LOT of code updates the "userMessage" and "messageImage". Some of it should go to a "gameLog" instead, but I haven't made the gameLog yet */
 #information {
   position: absolute;
