@@ -1,0 +1,4 @@
+May 13th
+Added an inventory screen that can be repositioned via dragging and dropping.
+Inventory screen displays the character icons in the katundian Crew and it displays the item icons for each item held by each character.
+Items are displayed in color if they are ready to use. If the item is exhausted, it is displayed in grayscale.
