@@ -182,7 +182,7 @@ const emptyImage = 'Blank.png';
 const systemDamage = 'SystemDamage.png';
 const doorDamage = 'DoorDamage.png'; 
 
-/ show functions are used to display different sections of html to the user: main menu, load screen, start selection screen, or the game itself. 
+// show functions are used to display different sections of html to the user: main menu, load screen, start selection screen, or the game itself. 
 function showMainMenu (){
   document.getElementById('mainMenu').style.display="block";
   document.getElementById('loadScreen').style.display="none";
