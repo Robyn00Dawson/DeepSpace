@@ -182,7 +182,7 @@ const emptyImage = 'Blank.png';
 const systemDamage = 'SystemDamage.png';
 const doorDamage = 'DoorDamage.png'; 
 
-// show functions are used to display different sections of html to the user: main menu, load screen, start selection screen, or the game itself. 
+/ show functions are used to display different sections of html to the user: main menu, load screen, start selection screen, or the game itself. 
 function showMainMenu (){
   document.getElementById('mainMenu').style.display="block";
   document.getElementById('loadScreen').style.display="none";
@@ -359,6 +359,7 @@ function startTheGame(charList, itemList, roomList){
   hideActionOptions(); 
   showGame();
   assignImages();
+  createInventory();
   document.getElementById('kluddeNumber').innerText = kluddeFleet;
   for (t=0;t<6;t++){
       drawKluddeCard(t);
@@ -873,7 +874,7 @@ function actionDescription(act){
     case "Gloves off":
       for (z=0; z<katundianCrew[activePlayer].items.length; z++){
         if("Reboot Gloves"===katundianCrew[activePlayer].items[z].name){
-          katundianCrew[activePlayer].items[z].refreshed = true;
+          refreshItem(activePlayer,z);
         }
      }
      possibleActions('');
@@ -941,6 +942,8 @@ function takeAction(act){
         msg = `The ${katundianCrew[activePlayer].role} finds the ${itemDeck[0].name}.`
         document.getElementById('messageImage').src = itemDeck[0].picture;
         itemDeck.shift();
+        num = katundianCrew[activePlayer].items.length-1;
+        makeItemIcon(activePlayer, num);
         acted = true;
         if(infectionList[4]){
           katundianCrew[activePlayer].stagger++;
@@ -1082,7 +1085,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0;y<katundianCrew[z].items.length;y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===2){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
           }
@@ -1126,7 +1129,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0; y<katundianCrew[z].items.length; y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===1){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
           }
@@ -1191,7 +1194,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0; y<katundianCrew[z].items.length; y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===3){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
             repairDamage(2);
@@ -1306,7 +1309,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0;y<katundianCrew[z].items.length;y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===2){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
           }
@@ -1469,6 +1472,7 @@ function takeAction(act){
           document.getElementById(`kluddeAmount${z}`).style.outline= "3px solid red";
           targetRoom = z;
           msg = `The ${katundianCrew[activePlayer].role} uses the Implosion Launcher to divert the kludde's attention towards the ${allRooms[z].room}`;
+          exhaustItem('Implosion Launcher');
         }
       }
       if (!acted) {sendMessage('Select a space zone before you click confirm. \n The next kludde attack will target that space zone.');}
@@ -1521,7 +1525,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0;y<katundianCrew[z].items.length;y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===1){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
           }
@@ -1581,6 +1585,7 @@ function takeAction(act){
           characterPosition(activePlayer);
           acted = true;
           msg = `The ${katundianCrew[activePlayer].role} uses the Pounce Suit to move to the ${allRooms[katundianCrew[activePlayer].room].room}.`
+          exhaustItem('Pounce Suit');
           if (infectionList[6]){
             katundianCrew[activePlayer].stagger++;
             msg += `\n The ${katundianCrew[activePlayer].role} wobbles unsteadily like they are intoxicated`;
@@ -1602,7 +1607,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         for (y=0;y<katundianCrew[z].items.length;y++){
           if (!(katundianCrew[z].items[y].refreshed) && katundianCrew[z].items[y].charge===3){
-            katundianCrew[z].items[y].refreshed = true;
+            refreshItem(z,y);
             acted = true;
             num++;
           }
@@ -1780,7 +1785,7 @@ function drawKluddeCard(z){
   allRooms[z].kludde.push(kluddeDeck[0]);
   document.getElementById(`kluddeAmount${z}`).innerText = allRooms[z].kludde.length;
   var kld = document.createElement('img');
-  kld.src ='Unrevealed.png';
+  kld.src ='https://lh3.googleusercontent.com/YjB2-2WPmvtEfTs6IXKDGHNQzFYpw7Eas5WEgghq96_OeH00JiM5dSVBu2nQ1zz-ALz_AqlipeFbZLlQJNgfkzWG2GsvBXFi4-LwHORc2kxFtwvyb2EwQcIOA5mEd5DA4c2SbRxZtDSW7OhBucS7MuaBehfAL35G4UNZ08y-RxeUuHbuKigh9_2v3clmbp4wI3dk81-_7n1IkKJPduRqKycvpugnPyaYHp5sClyzsP5q6bbzfJt67jJwkwxMC8_85Hx43MpH4eGuCIvFLMd206ceDV-if7vXUtjjawR2z0YPNV0B3sdz-v8pOUvRAdFaBfyrHF14ZJJ1Tu_tC-RMVm3GXYQRN7nKe1fWnF5VPmGP2974JeUrW5tnbMmUTceyVqHnHxflJyJdfnlcEZk5DamZrUV29eL3FJlSc1T_2OrUB4vFL0xa2ttHMxlYqiC2ov1Bt6RNJ9eELM5oDTKPrNYWHfcI4Z-LT-tU2CKfS4bpkFNjsAGTtq4BmvGMJELxQqpSISkJ4ua870FU9HduscEMygLLF4jnI9XrSqCLeATLOPRkf2MYLlQPYyRqnta8NByd-qHmJ8wVc-6S5MUPOZ6KEgg_EmKh1EETFzJ3Fq5QGhP56nWPIo7sXlG9iWmZnrUG43C-aIScJJnycUObFEWYHrENOWW90kbOHmSEF1IXshtHptPFqwk-duiJTL0TWOstBMNEeL4PYngx1Lk8bpuD6U_EEzMjFCuoAw3QKcCqUKG2Oyy4GRbAQfb9RyYaYNuA9BGYb3CKhncOlQL27QnTMlek07ryDxLaylxz1oWjgr07h5weNPldXg_0rlUVB7GC7iTcSM7BhlnPt14Z46XIyNgwp2JgEPfq3QwP0reZgj2bOMMVfN1w1tmPIJ4qU_gYj34QACe1Wa6g_K_3MbnPp9k64PhuxsxVzniTr72GWQN6=w100-h100-s-no?authuser=0';
   kld.style.position = 'absolute';
   kld.style.left =`${spacePositions[z][allRooms[z].kludde.length-1][0]}px`
   kld.style.top =`${spacePositions[z][allRooms[z].kludde.length-1][1]}px`
@@ -1854,7 +1859,7 @@ function kluddeDescription(kldID){
     if (kldName===allRooms[rmNum].kludde[z].name && kldClock===allRooms[rmNum].kludde[z].clockwise){
       if(allRooms[rmNum].kludde[z].revealed){
         document.getElementById('userMessage').innerText = `You clicked on a ${allRooms[rmNum].kludde[z].name} that is attacking the ${allRooms[rmNum].room}.`
-        document.getElementById('messageImage').src = allRooms[rmNum].kludde[z].picture;
+        document.getElementById('userMessage').src = allRooms[rmNum].kludde[z].picture;
       clickedKludde[0] = allRooms[rmNum].kludde[z];
       clickedKludde[1] = rmNum;
       clickedKludde[2] = z;
@@ -1942,9 +1947,15 @@ function exhaustItem(itmName) {
   for (b=0; b<katundianCrew[activePlayer].items.length; b++){
     if(itmName===katundianCrew[activePlayer].items[b].name){
       katundianCrew[activePlayer].items[b].refreshed = false;
+      document.getElementById(`${activePlayer}${itmName}`).src = katundianCrew[activePlayer].items[b].grayIcon
     }
   }
   if (infectionList[11]) {kluddefused = false;}
+}
+
+function refreshItem(crNum, itNum){
+  katundianCrew[crNum].items[itNum].refreshed = true;
+  document.getElementById(`${crNum}${katundianCrew[crNum].items[itNum].name}`).src = katundianCrew[crNum].items[itNum].icon;
 }
 
 function scanFor(kldName, itmName){
@@ -1965,6 +1976,7 @@ function scanFor(kldName, itmName){
   }
 }
 
+// activeInfections(infs) sets the values for infectionList based on the active player's infections. If the active player has Botonophobia for example, infectionList[1] gets set to true. Infection list is used different parts of the code to penalize the infected character. 
 let infectionList = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
 function activeInfections(infs) {
   infectionList = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
@@ -2019,3 +2031,76 @@ function activeInfections(infs) {
   if (!(infectionList[11])) {kluddefused = true;}
   }
 }
+
+// createInventory adds the character images and starting item images to the inventory. 
+function createInventory() {
+  for (z=0; z<katundianCrew.length; z++){
+    makeCrewIcon(z);
+    makeItemIcon(z,0);
+  }
+  document.getElementById('inventoryDisplay').style.height = `${100+110*katundianCrew.length}px`;
+  document.getElementById('itemScrollbox').style.height = `${20+110*katundianCrew.length}px`;
+}
+
+// makeCrewIcon(crNum) makes an icon in the inventory screen for a specific crew member.
+function makeCrewIcon(crNum){
+  var pic = document.createElement('img');
+  pic.src = katundianCrew[crNum].picture;
+  pic.style.position = 'absolute';
+  pic.style.left = '50px';
+  pic.style.top = `${50+crNum*110}px`;
+  pic.style.width = '100px';
+  pic.style.height = '100px';
+  document.getElementById('inventoryDisplay').appendChild(pic);
+}
+
+// makeItemIcon(crNum, itNum) makes an icon in the inventory screen for a specific item. The item is located at katundianCrew[crNum].items[itNum]
+function makeItemIcon(crNum, itNum) {
+  var pic = document.createElement('img');
+  pic.src = katundianCrew[crNum].items[itNum].icon;
+  pic.style.position = 'absolute';
+  pic.style.left = `${10+itNum*110}px`;
+  pic.style.top = `${10+crNum*110}px`;
+  pic.style.width = '100px';
+  pic.style.height = '100px';
+  pic.id = JSON.parse(JSON.stringify(`${crNum}${katundianCrew[crNum].items[itNum].name}`));
+  console.log(pic.id);
+  pic.addEventListener('click', () => {clickInventory(pic.id)} ); 
+  document.getElementById('itemScrollbox').appendChild(pic);
+}
+
+// clickInventory(picID) shows the player information about the item they click on in their inventory.
+function clickInventory(picID) {
+  let num = 0;
+  let itName = picID.slice(1);
+  console.log(picID);
+  num = +picID.charAt(0);
+  for (z=0; z<katundianCrew[num].items.length; z++){
+    if (itName===katundianCrew[num].items[z].name){
+      document.getElementById('userMessage').innerText = katundianCrew[num].items[z].description;
+      document.getElementById('messageImage').src = katundianCrew[num].items[z].picture;
+    }
+  }
+}
+
+// This allows the user to drag and drop the inventory
+var offset = [0,0]
+var inventoryBox = document.getElementById ("inventoryDisplay");
+var boxMoves = false;
+inventoryBox.addEventListener('mousedown', function(e) {
+    boxMoves = true;
+    offset = [
+        inventoryBox.offsetLeft - e.clientX,
+        inventoryBox.offsetTop - e.clientY
+    ];
+}, true);
+document.addEventListener('mouseup', function() {
+    boxMoves = false;
+}, true);
+document.addEventListener('mousemove', function(e) {
+    event.preventDefault();
+    if (boxMoves) {
+        inventoryBox.style.left = (e.clientX + offset[0]) + 'px';
+        inventoryBox.style.top  = (e.clientY + offset[1]) + 'px';
+    }
+}, true);
