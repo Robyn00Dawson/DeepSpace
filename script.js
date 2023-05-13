@@ -1368,7 +1368,7 @@ function takeAction(act){
           }
         }
       }
-      acted ? msg = `${num} kludde are revealed.` : sendMessage('Select a space zone, before you click confirm.');
+      acted ? msg += `${num} kludde are revealed.` : sendMessage('Select a space zone, before you click confirm.');
       break;
     case "Fixit Grenade":
       num = 0;
