@@ -1803,6 +1803,7 @@ function drawKluddeCard(z){
 
 // revealAKludde(kld) takes a hidden kludde and reveals it. kld is a specific kludde inside allRooms[z].kludde. 
 function revealAKludde(kld, rmNum, ndx){
+  document.getElementById('messageImage').src = kld.picture;
   switch (kld.type){
     case ('defeatable'):
       kld.revealed = true;
