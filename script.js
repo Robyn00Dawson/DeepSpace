@@ -1955,8 +1955,8 @@ function exhaustItem(itmName) {
         katundianCrew[activePlayer].items.splice(b,1);
         document.getElementById(`${activePlayer}${itmName}`).remove();
         for (c=0; c<katundianCrew[activePlayer].items.length; c++) {
-          document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c]}.name}`).style.left = `${10+c*110}px`;
-          document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c]}.name}`).style.top = `${10+activePlayer*110}px`;
+          document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c].name}`).style.left = `${10+c*110}px`;
+          document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c].name}`).style.top = `${10+activePlayer*110}px`;
         }
       }
     }
