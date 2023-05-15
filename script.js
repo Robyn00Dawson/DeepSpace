@@ -1957,6 +1957,7 @@ function exhaustItem(itmName) {
         for (c=0; c<katundianCrew[activePlayer].items.length; c++) {
           document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c].name}`).style.left = `${10+c*110}px`;
           document.getElementById(`${activePlayer}${katundianCrew[activePlayer].items[c].name}`).style.top = `${10+activePlayer*110}px`;
+          console.log(`${activePlayer}${katundianCrew[activePlayer].items[c].name}`);
         }
       }
     }
