@@ -133,13 +133,13 @@ function resetTheGame(){
     {name: 'Spicy Air', fleet: 0, clockwise: 4, type: 'event', picture: spicyAirPicture, revealed: false},
     {name: 'Spicy Air', fleet: 0, clockwise: 5, type: 'event', picture: spicyAirPicture, revealed: false},
     {name: 'Bio Rage', fleet: 1, clockwise:1, type: 'infection', picture: 'Bio Rage.png', revealed: false},
-    {name: 'Botanophobia', fleet: 1, clockwise:2, type: 'infection', picture: 'Botanophobia', revealed: false},
+    {name: 'Botanophobia', fleet: 1, clockwise:2, type: 'infection', picture: 'Botanophobia.png', revealed: false},
     {name: 'BTD Visions', fleet: 1, clockwise:3, type: 'infection', picture: 'BTD Visions.png', revealed: false},
     {name: 'Crop Duster', fleet: 1, clockwise:4, type: 'infection', picture: 'Crop Duster.png', revealed: false},
     {name: 'Frazzled', fleet: 1, clockwise:5, type: 'infection', picture: 'Frazzled.png', revealed: false},
     {name: 'Fung Eye', fleet: 1, clockwise:1, type: 'infection', picture: 'Fungeye.png', revealed: false},
     {name: 'Intoxicated', fleet: 1, clockwise:2, type: 'infection', picture: 'Intoxicated.png', revealed: false},
-    {name: 'Destruction', fleet: 1, clockwise:3, type: 'infection', picture: 'Destruction.png', revealed: false},
+    {name: 'Destruction', fleet: 1, clockwise:3, type: 'infection', picture: 'Kludde Destruction.png', revealed: false},
     {name: 'Kludde Poisoning', fleet: 1, clockwise:4, type: 'infection', picture: 'Kludde Poisoning.png', revealed: false},
     {name: 'Kludde Sensitivity', fleet: 1, clockwise:5, type: 'infection', picture: 'Kludde Sensitivity.png', revealed: false},
     {name: 'Kludde Vengence', fleet: 1, clockwise:1, type: 'infection', picture: 'Kludde Vengence.png', revealed: false},
@@ -1215,7 +1215,7 @@ function takeAction(act){
       break;
     case "Kludde attack":
       num = -1;
-      for (z=0;z<katundianCrew.length;z++){
+      for (z=0; z<katundianCrew.length; z++){
         if (katundianCrew[z].room===targetRoom){
           katundianCrew[z].stagger++
           activeInfections(katundianCrew[z].infections);
@@ -1226,7 +1226,7 @@ function takeAction(act){
         }
       }
       msg = `The Kludde attack the ${allRooms[targetRoom].room}!`
-      if (num>=0) {msg += `\n The ${katundianCrew[num].role} feels overwhelmed.`}
+      if (num>=0) {msg += `\n The ${katundianCrew[num].role} feels overwhelmed.`;}
       attackDamage(allRooms[targetRoom].kludde.length+1);
       drawKluddeCard(targetRoom);
       nextPlayerTurn(msg)
