@@ -218,6 +218,16 @@ function showGame (){
 function showInstructions (){
   document.getElementById('userMessage').innerText = 'Each character gets 3 actions on their turn. \n "peak" at kludde cards to reveal them, then use items to defeat them. \n "paw" to gain new items \n "scamper" to move. \n \n After each character turn, the kludde attack. \n kludde will damage your ship and reduce ship energy. \n \n Win the game when kludde fleet reaches zero. \n Lose the game when ship energy reaches zero.';
 }
+
+// showInventory() hides the infections menu so that the inventory is displayed instead. showInfections() displays the infections menu, on top of the inventory.
+function showInventory () {
+  document.getElementById('infectionScrollbox').style.display="none";
+}
+function showInfections () {
+  document.getElementById('infectionScrollbox').style.display="block";
+}
+
+
 //hideActionOptions() is a function that hides several radio buttons, checkboxes, drop down menus. These buttons let the user select different options for their actions. Only certain options are possible. The rest need to stay hidden. 
 function hideActionOptions(){
   for (x=0;x<19;x++){
@@ -1032,7 +1042,7 @@ function takeAction(act){
         if (katundianCrew[z].room === katundianCrew[activePlayer].room && katundianCrew[z].infections.length>0){
           num += katundianCrew[z].infections.length;
           kluddeFleet -= katundianCrew[z].infections.length;
-          katundianCrew[z].infections = [];
+          treatInfections(z);
           acted = true;
         }
       }
@@ -1173,7 +1183,7 @@ function takeAction(act){
       for (z=0;z<katundianCrew.length;z++){
         if (katundianCrew[z].infections.length > 0){
           num += katundianCrew[z].infections.length;
-          katundianCrew[z].infections = [];
+          treatInfections(z);
           acted = true;
         }
       }
@@ -1247,7 +1257,7 @@ function takeAction(act){
             num[0] += katundianCrew[z].stagger;
             num[1] += katundianCrew[z].infections.length;
             katundianCrew[z].stagger = 0;
-            katundianCrew[z].infections = [];
+            treatInfections(z);
             acted = true;
           }
         }
@@ -1652,7 +1662,7 @@ function takeAction(act){
         if (katundianCrew[z].room === katundianCrew[activePlayer].room && katundianCrew[z].infections.length>0){
           num += katundianCrew[z].infections.length;
           kluddeFleet -= katundianCrew[z].infections.length;
-          katundianCrew[z].infections = [];
+          treatInfections(z);
           acted = true;
         }
       }
@@ -1709,6 +1719,7 @@ function nextPlayerTurn(msg){
   if (activePlayer >= katundianCrew.length){
     activePlayer = 0;
   }
+  document.getElementById('turnTracker').style.top = `${75+110*activePlayer}px`
   document.getElementById('messageImage').src = emptyImage;
   activeInfections(katundianCrew[activePlayer].infections);
   if (infectionList[0]){
@@ -1814,6 +1825,8 @@ function revealAKludde(kld, rmNum, ndx){
       katundianCrew[activePlayer].infections.push(kld);
       msg = `The ${katundianCrew[activePlayer].role} reveals a cloud of infectious spores. \n The ${katundianCrew[activePlayer].role} is infected with ${kld.name}.`;
       removeKluddeIcon(kld, rmNum, ndx);
+      ndx = katundianCrew[activePlayer].infections.length-1;
+      makeInfectionIcon(activePlayer, ndx);
       if (infectionList[7]) {
         katundianCrew[activePlayer].stagger += 3;
         msg += `\n The ${katundianCrew[activePlayer].role} collapses from kludde poisoning.`
@@ -2051,6 +2064,7 @@ function createInventory() {
   }
   document.getElementById('inventoryDisplay').style.height = `${100+110*katundianCrew.length}px`;
   document.getElementById('itemScrollbox').style.height = `${20+110*katundianCrew.length}px`;
+  document.getElementById('infectionScrollbox').style.height = `${20+110*katundianCrew.length}px`;
 }
 
 // makeCrewIcon(crNum) makes an icon in the inventory screen for a specific crew member.
@@ -2075,7 +2089,6 @@ function makeItemIcon(crNum, itNum) {
   pic.style.width = '100px';
   pic.style.height = '100px';
   pic.id = JSON.parse(JSON.stringify(`${crNum}${katundianCrew[crNum].items[itNum].name}`));
-  console.log(pic.id);
   pic.addEventListener('click', () => {clickInventory(pic.id)} ); 
   document.getElementById('itemScrollbox').appendChild(pic);
 }
@@ -2084,7 +2097,6 @@ function makeItemIcon(crNum, itNum) {
 function clickInventory(picID) {
   let num = 0;
   let itName = picID.slice(1);
-  console.log(picID);
   num = +picID.charAt(0);
   for (z=0; z<katundianCrew[num].items.length; z++){
     if (itName===katundianCrew[num].items[z].name){
@@ -2092,6 +2104,40 @@ function clickInventory(picID) {
       document.getElementById('messageImage').src = katundianCrew[num].items[z].picture;
     }
   }
+}
+
+// makeInfectionIcon(crNum, inNum) creates an icon in the infections tab when a character becomes infected.
+function makeInfectionIcon(crNum, inNum) {
+  var pic = document.createElement('img');
+  pic.src = katundianCrew[crNum].infections[inNum].icon;
+  pic.style.position = 'absolute';
+  pic.style.left = `${10+inNum*110}px`;
+  pic.style.top = `${10+crNum*110}px`;
+  pic.style.width = '100px';
+  pic.style.height = '100px';
+  pic.id = JSON.parse(JSON.stringify(`${crNum}${katundianCrew[crNum].infections[inNum].name}`));
+  pic.addEventListener('click', () => {clickInfection(pic.id)} ); 
+  document.getElementById('infectionScrollbox').appendChild(pic);
+}
+
+// clickInfection(picID) allows the player to get information about infections by clicking on the icon.
+function clickInfection(picID) {
+  let num = 0;
+  let inName = picID.slice(1);
+  num = +picID.charAt(0);
+  for (z=0; z<katundianCrew[num].infections.length; z++){
+    if (inName===katundianCrew[num].infections[z].name){
+      document.getElementById('userMessage').innerText = katundianCrew[num].infections[z].description;
+      document.getElementById('messageImage').src = katundianCrew[num].infections[z].picture;
+    }
+  }
+}
+
+function treatInfections(crNum){
+  for (d=0; d<katundianCrew[crNum].infections.length; d++){
+    document.getElementById(`${crNum}${katundianCrew[crNum].infections[d].name}`).remove();
+  }
+  katundianCrew[crNum].infections = [];
 }
 
 // This allows the user to drag and drop the inventory
@@ -2115,3 +2161,7 @@ document.addEventListener('mousemove', function(e) {
         inventoryBox.style.top  = (e.clientY + offset[1]) + 'px';
     }
 }, true);
+
+function explainTheInventory() {
+  document.getElementById('userMessage').innerText = "The inventory displays the items carried by each member of your crew. \n you can click and drag to move the inventory box. \n The blue cirle on the left shows whose turn it is. \n Exhausted items are displayed in grayscale. \n You must refresh an exhausted item before you can use it again. \n Click on an item for information about that item."
+}
