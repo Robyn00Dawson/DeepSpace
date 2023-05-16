@@ -2163,3 +2163,4 @@ document.addEventListener('mousemove', function(e) {
 
 function explainTheInventory() {
   document.getElementById('userMessage').innerText = "Displays the items and infections carried by each member of your crew \n Click the tabs at the top to toggle between inventory and infections. \n Click on an item or infection for more information. \n Click and drag to move the entire box. \n  The blue cirle on the left shows whose turn it is. \n Items in grayscale cannot be used until you refresh them.";
+}
