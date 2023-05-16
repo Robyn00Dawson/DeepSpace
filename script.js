@@ -2163,5 +2163,4 @@ document.addEventListener('mousemove', function(e) {
 }, true);
 
 function explainTheInventory() {
-  document.getElementById('userMessage').innerText = "The inventory displays the items carried by each member of your crew. \n you can click and drag to move the inventory box. \n The blue cirle on the left shows whose turn it is. \n Exhausted items are displayed in grayscale. \n You must refresh an exhausted item before you can use it again. \n Click on an item for information about that item."
-}
+  document.getElementById('userMessage').innerText = "Displays the items and infections carried by each member of your crew \n Click the tabs at the top to toggle between inventory and infections. \n Click on an item or infection for more information. \n Click and drag to move the entire box. \n  The blue cirle on the left shows whose turn it is. \n Items in grayscale cannot be used until you refresh them.
