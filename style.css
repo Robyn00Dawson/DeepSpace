@@ -6,7 +6,7 @@ body {
   z-index: 0;
 }
 
-/* */
+/*The "inventory" is the grey box with the pictures of the crew and all the items they are carrying. "inventoryDisplay" is the big outer box. "itemScrollbox" is where the item icons go. It's separate so the players can scroll through the items while still seeing the character icsons. "turnTracker" is the blue circle that shows whose turn it is. "inventoryHeader" is the text at the top. "inventoryHelp" is the ? in the top left.*/
 #inventoryDisplay {
   position: absolute;
   left: 1500px;
@@ -16,7 +16,6 @@ body {
   background-color: gray;
   border: 3px solid white
 }
-
 #itemScrollbox {
   position: absolute;
   left: 160px;
@@ -24,8 +23,47 @@ body {
   height: 720px;
   width: 430px;
   overflow: auto;
-  background-color: gray;
+  background-color: #b5a929;
   border: 2px solid black;
+  z-index: 5;
+}
+#infectionScrollbox{
+  position: absolute;
+  left: 160px;
+  top: 40px;
+  height: 720px;
+  width: 430px;
+  overflow: auto;
+  background-color: #c1f7c6;
+  border: 2px solid black;
+  display: none;
+  z-index: 6;
+}
+#turnTracker {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 10px;
+}
+#inventoryHelp{
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  font-size:25px;
+  border: 2px solid black;
+  text-align: center;
+}
+#inventoryTab{
+  position: absolute;
+  left: 175px;
+  top: -2px;
+}
+#infectionsTab{
+  position: absolute;
+  left: 375px;
+  top: -2px;
 }
 
 /* information section shows an image and text to tell the player what's happening or what to do. Right now a LOT of code updates the "userMessage" and "messageImage". Some of it should go to a "gameLog" instead, but I haven't made the gameLog yet */
