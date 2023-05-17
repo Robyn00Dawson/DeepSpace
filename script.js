@@ -436,7 +436,7 @@ function possibleActions(msg){
   if (infectionList[5]){
     actionList.splice(2,1);
     if (katundianCrew[activePlayer].role==='scout'){
-      actionList.splice(3,1);
+      actionList.splice(4,1);
     }
   }
   if (shipEnergy > 1 && !(damage[katundianCrew[activePlayer].room])){
