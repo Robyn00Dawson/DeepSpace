@@ -134,19 +134,19 @@ function resetTheGame(){
     {name: 'Spicy Air', fleet: 0, clockwise: 5, type: 'event', picture: spicyAirPicture, revealed: false},
     {name: 'Bio Rage', fleet: 1, clockwise:1, type: 'infection', picture: 'Bio Rage.png', icon:'Bio Rage Icon.png', description: 'At the start of your turn, damage your room if possible.', revealed: false},
     {name: 'Botanophobia', fleet: 1, clockwise:2, type: 'infection', picture: 'Botanophobia.png', icon: 'Botanophobia Icon.png', description: 'Each time you reveal a hidden kludde you are staggered.', revealed: false},
-    {name: 'BTD Visions', fleet: 1, clockwise:3, type: 'infection', picture: 'BTD Visions.png', icon:'BTD Visions Icon.png', description: 'If you start your turn with another character in your room, you are staggered.', revealed: false},
+    {name: 'BTD Visions', fleet: 1, clockwise:3, type: 'infection', picture: 'BTD Visions.png', icon:'BTD Visions Icon.png', description: 'Each time you start your turn with another character in your room, you are staggered.', revealed: false},
     {name: 'Crop Duster', fleet: 1, clockwise:4, type: 'infection', picture: 'Crop Duster.png', icon: 'Crop Duster Icon.png', description: 'At the end of your turn all other characters in your room are staggered.', revealed: false},
     {name: 'Frazzled', fleet: 1, clockwise:5, type: 'infection', picture: 'Frazzled.png', icon: 'Frazzled Icon.png', description: 'Each time you paw a new item, you are staggered.', revealed: false},
     {name: 'Fung Eye', fleet: 1, clockwise:1, type: 'infection', picture: 'Fungeye.png', icon: 'Fungeye Icon.png', description: 'You cannot peak or spot.', revealed: false},
     {name: 'Intoxicated', fleet: 1, clockwise:2, type: 'infection', picture: 'Intoxicated.png', icon: 'Intoxicated Icon.png', description: 'Each time you move to a new room you are staggered.', revealed: false},
-    {name: 'Destruction', fleet: 1, clockwise:3, type: 'infection', picture: 'Kludde Destruction.png', icon: 'Kludde Destruction Icon.png', description: 'Each time you activate a system, damage that system.', revealed: false},
-    {name: 'Kludde Poisoning', fleet: 1, clockwise:4, type: 'infection', picture: 'Kludde Poisoning.png', icon: 'Kludde Poisoning Icon.png', description: 'Each time you become infected,you are tripple staggered.', revealed: false},
+    {name: 'Destruction', fleet: 1, clockwise:3, type: 'infection', picture: 'Kludde Destruction.png', icon: 'Kludde Destruction Icon.png', description: 'Each time you activate a ship system, damage that system.', revealed: false},
+    {name: 'Kludde Poisoning', fleet: 1, clockwise:4, type: 'infection', picture: 'Kludde Poisoning.png', icon: 'Kludde Poisoning Icon.png', description: 'Each time you become infected, you are tripple staggered.', revealed: false},
     {name: 'Kludde Sensitivity', fleet: 1, clockwise:5, type: 'infection', picture: 'Kludde Sensitivity.png', icon: 'Kludde Sensitivity Icon.png', description: "You cannot use your character's special action.", revealed: false},
     {name: 'Kludde Vengence', fleet: 1, clockwise:1, type: 'infection', picture: 'Kludde Vengence.png', icon: 'Kludde Vengence Icon.png', description: 'Each time you defeat a kludde, you are staggered.', revealed: false},
     {name: 'Kluddefused', fleet: 1, clockwise:2, type: 'infection', picture: 'Kluddefused.png', icon: 'Kluddefused Icon.png', description: 'You cannot use more than 1 item each turn.', revealed: false},
     {name: 'Overwhelmed', fleet: 1, clockwise:3, type: 'infection', picture: 'Overwhelmed.png', icon: 'Overwhelmed Icon.png', description: 'Each time the kludde attack your room, you are staggered.', revealed: false},
     {name: 'Turning Green', fleet: 1, clockwise:4, type: 'infection', picture: 'Turning Green.png', icon: 'Turning Green Icon.png', description: 'If you end your turn without taking a nap, you are staggered.',  revealed: false},
-    {name: 'Whiplash', fleet: 1, clockwise:5, type: 'infection', picture: 'Whiplash.png', icon:'Whiplash Icon.png', description: 'You are fully staggered if you start your turn with 2 or more stagger.',  revealed: false}
+    {name: 'Whiplash', fleet: 1, clockwise:5, type: 'infection', picture: 'Whiplash.png', icon:'Whiplash Icon.png', description: 'You are completely staggered if you start your turn with 2 or more stagger.',  revealed: false}
   ]
 
   // damage is an array of 19 boolean values. Positions 0 through 6 represent the systems in each room of the ship. Positions 7 through 18 represent the doors leading between the room. A value of true means that particular door or system has been damaged. 
@@ -2053,6 +2053,7 @@ function activeInfections(infs) {
         break;
     }
   }
+  if(!infectionList[11]) {kluddefused = true;}
 }
 
 // createInventory adds the character images and starting item images to the inventory. 
