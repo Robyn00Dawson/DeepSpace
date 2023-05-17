@@ -866,7 +866,7 @@ function actionDescription(act){
       scanFor('Kaboom Pod', 'Reboot Gloves');
       break;
     case "Reboot Gloves 2":
-      exhaustItem('Rebbot Gloves');
+      exhaustItem('Reboot Gloves');
       while (document.getElementById('actionSelector').options.length > 0){
     document.getElementById('actionSelector').options.remove(0);
       }
